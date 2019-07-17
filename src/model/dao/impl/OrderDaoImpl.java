@@ -68,7 +68,7 @@ public class OrderDaoImpl implements OrderDao {
 		order.setPassport(rs.getString(2));
 		order.setUser(userDao.getUserById(rs.getInt(3)));
 		order.setCheck(checkDao.getById(rs.getInt(4)));
-		order.setCar(carDao.getCarByModel(rs.getString(5)));
+		order.setCar(carDao.getById(rs.getInt(5)));
 		order.setStartDate(rs.getDate(6));
 		order.setEndDate(rs.getDate(7));
 		order.setDriver(rs.getBoolean(8));
@@ -140,16 +140,17 @@ public class OrderDaoImpl implements OrderDao {
 	public void update(Order order) {
 		String sql = "UPDATE orders SET passport = ?, user_id = ?, check_id = ?, car = ?, startDate = ?, endDate = ?, driver = ?, status = ? WHERE id = ?";
 		try (Connection con = ds.getConnection()) {
+			int k = 0;
 			PreparedStatement st = con.prepareStatement(sql);
-			st.setString(1, order.getPassport());
-            st.setInt(2, order.getUser().getId());
-            st.setInt(3, order.getCheck().getId());
-            st.setInt(4, order.getCar().getId());
-            st.setDate(5, new Date(order.getStartDate().getTime()));
-            st.setDate(6, new Date(order.getEndDate().getTime()));
-            st.setBoolean(7, order.isDriver());
-            st.setInt(8, order.getStatus().getId());
-            st.setInt(9, order.getId());
+			st.setString(++k, order.getPassport());
+            st.setInt(++k, order.getUser().getId());
+            st.setInt(++k, order.getCheck().getId());
+            st.setInt(++k, order.getCar().getId());
+            st.setDate(++k, new Date(order.getStartDate().getTime()));
+            st.setDate(++k, new Date(order.getEndDate().getTime()));
+            st.setBoolean(++k, order.isDriver());
+            st.setInt(++k, order.getStatus().getId());
+            st.setInt(++k, order.getId());
 			st.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();

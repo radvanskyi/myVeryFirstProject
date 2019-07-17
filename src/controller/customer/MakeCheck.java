@@ -41,11 +41,11 @@ public class MakeCheck extends HttpServlet {
 			}
 		}
 		
-		check.setOrders(orders);
-		check.setPrice(totalPrice(check));
-		check.setDescription(Check.NEW_CHECK);
-		check.setStatus(statusDao.getById(Status.DEFAULT_CHECK_STATUS));
 		check.setDate(new Date(System.currentTimeMillis()));
+		check.setDescription(Check.NEW_CHECK);
+		check.setPrice(totalPrice(check));
+		check.setStatus(statusDao.getById(Status.DEFAULT_CHECK_STATUS));
+		check.setOrders(orders);
 		checkDao.createCheck(check);
 		
 		for (Order o : orders) {

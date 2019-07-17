@@ -50,8 +50,8 @@ CREATE TABLE cars (
   mark VARCHAR (20) NOT NULL,
   model VARCHAR (20) NOT NULL,
   price INTEGER NOT NULL,
-  carClass INTEGER NOT NULL REFERENCES Classes(id),
-  status INTEGER NOT NULL DEFAULT "0" REFERENCES Statuses
+  carClass INTEGER NOT NULL REFERENCES classes(id),
+  status INTEGER NOT NULL DEFAULT "0" REFERENCES statuses
 );
 
 INSERT INTO cars (mark,model,price,carClass) VALUES ('Audi', 'A3', 1000, 3);
@@ -78,7 +78,7 @@ CREATE TABLE users(
   password VARCHAR (50) NOT NULL,
   firstName VARCHAR (30) NOT NULL,
   lastName VARCHAR (30) NOT NULL,
-  role INTEGER NOT NULL REFERENCES Roles(id)
+  role INTEGER NOT NULL REFERENCES roles(id)
 );
 
 INSERT INTO users(email, password, firstName, lastName, role) VALUES ('ivanov@ukr.net', '1', 'Ivanov', 'Ivan', "0");
@@ -88,13 +88,13 @@ INSERT INTO users(email, password, firstName, lastName, role) VALUES ('denisov@u
 CREATE TABLE orders(
   id INTEGER NOT NULL auto_increment PRIMARY KEY,
   passport VARCHAR (10) NOT NULL,
-  user_id INTEGER NOT NULL REFERENCES Users(id),
-  check_id INTEGER REFERENCES Checks(id),
-  car INTEGER(10) NOT NULL REFERENCES Cars(id),
-  startdate DATE NOT NULL,
-  finishdate DATE NOT NULL,
+  user_id INTEGER NOT NULL REFERENCES users(id),
+  check_id INTEGER REFERENCES checks(id),
+  car INTEGER(10) NOT NULL REFERENCES cars(id),
+  startDate DATE NOT NULL,
+  endDate DATE NOT NULL,
   driver BOOLEAN NOT NULL,
-  status INTEGER NOT NULL REFERENCES Statuses(id)
+  status INTEGER NOT NULL REFERENCES statuses(id)
 );
 
 
@@ -103,5 +103,5 @@ CREATE TABLE checks(
   date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   description VARCHAR (300),
   price INTEGER,
-  status INTEGER NOT NULL REFERENCES Statuses(id)
+  status INTEGER NOT NULL REFERENCES statuses(id)
 );

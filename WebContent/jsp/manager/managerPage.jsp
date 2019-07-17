@@ -22,12 +22,11 @@
 						</div>
 					</li>
 
-					<li><a href="${pageContext.request.contextPath}/newOrderList"><i
-							class="fa"></i>
-						<f:message key="manager.newOrders" /></a></li>
-					<li><a href="${pageContext.request.contextPath}/orderList"><i
-							class="fa"></i>
-						<f:message key="manager.orderList" /></a></li>
+					<li><a href="${pageContext.request.contextPath}/newOrders"><i
+							class="fa"></i> <f:message key="manager.newOrders" /></a></li>
+					<li><a
+						href="${pageContext.request.contextPath}/orderListManager"><i
+							class="fa"></i> <f:message key="manager.orderList" /></a></li>
 				</ul>
 			</div>
 

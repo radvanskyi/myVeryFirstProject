@@ -12,7 +12,7 @@
                     <div class="panel-body">
                         <div class="col-lg-4">
                             <f:message key="car.mark"/>: ${order.car.mark}<br/>
-                            <f:message key="car.name"/>: ${order.car.model}<br/>
+                            <f:message key="car.model"/>: ${order.car.model}<br/>
                             <f:message key="car.carClass"/>: ${order.car.carClass.name}<br/>
                             <f:message key="car.costPerDay"/>: ${order.car.price}<br/>
                         </div>
@@ -32,9 +32,9 @@
 
                     <p><f:message key="user.password"/>: ${Norder.user.password}</p><br/>
 
-                    <p><f:message key="user.firstname"/>: ${Norder.user.firstName}</p><br/>
+                    <p><f:message key="user.firstName"/>: ${Norder.user.firstName}</p><br/>
 
-                    <p><f:message key="user.lastname"/>: ${Norder.user.lastName}</p><br/>
+                    <p><f:message key="user.lastName"/>: ${Norder.user.lastName}</p><br/>
                 </div>
 
                 <form class="form-group" action="${pageContext.request.contextPath}/cancelOrder" method="post">

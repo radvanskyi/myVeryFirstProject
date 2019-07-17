@@ -108,7 +108,6 @@
 						<f:message key="check" />
 						: ${check.id}
 					</p>
-					<br />
 					<f:message key="order.currentDate" />
 					: ${check.date}<br />
 					<f:message key="check.description" />
