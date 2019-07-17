@@ -2,7 +2,7 @@ package model.entity;
 
 import java.io.Serializable;
 import java.sql.Date;
-import java.util.HashSet;
+import java.util.List;
 
 public class Check implements Serializable {
 
@@ -22,7 +22,7 @@ public class Check implements Serializable {
 	private Date date;
 	private String description;
 	private int price;
-	private HashSet<Order> orders;
+	private List<Order> orders;
 	private Status status;
 	
 	public int getId() {
@@ -49,11 +49,11 @@ public class Check implements Serializable {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public HashSet<Order> getOrders() {
+	public List<Order> getOrders() {
 		return orders;
 	}
-	public void setOrders(HashSet<Order> orders) {
-		this.orders = orders;
+	public void setOrders(List<Order> list) {
+		this.orders = list;
 	}
 	@Override
 	public String toString() {

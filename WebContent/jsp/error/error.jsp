@@ -1,6 +1,6 @@
+<%@include file="/jsp/taglibs.jsp" %>
 <!DOCTYPE html>
 <html>
-<%@include file="/jsp/taglibs.jsp" %>
 <body>
 <div class="col-lg-offset-5 col-lg-2">
     <p class="h3" style="color: red">

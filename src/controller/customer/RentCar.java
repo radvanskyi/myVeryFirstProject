@@ -20,8 +20,8 @@ import model.dao.impl.UserDaoImpl;
 import model.entity.Order;
 import model.entity.Status;
 
-@WebServlet("/orderList")
-public class OrderList extends HttpServlet {
+@WebServlet("/rentCar")
+public class RentCar extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -29,35 +29,34 @@ public class OrderList extends HttpServlet {
 		CarDao carDao = new CarDaoImpl();
 		UserDao userDao = new UserDaoImpl();
 		StatusDao statusDao = new StatusDaoImpl();
-		
+
+		Date current = new Date(System.currentTimeMillis());
 		int id = Integer.parseInt(request.getParameter("id"));
-		String email = (String) request.getSession().getAttribute("email");
+		String email = (String)request.getSession().getAttribute("email");
 		Date startDate = Date.valueOf(request.getParameter("startDate"));
-		Date endDate = Date.valueOf(request.getParameter("finishDate"));
-		Date currentDate = new Date(System.currentTimeMillis());
-		String needDriver = request.getParameter("driver");
+		Date endDate = Date.valueOf(request.getParameter("endDate"));
+		String driver = request.getParameter("driver");
 		String passport = request.getParameter("passport");
 		
-		boolean driver = false;
-		if (needDriver != null) {
-			driver = "on".equals(needDriver);
+		boolean needDriver = false;
+		if (driver != null) {
+			needDriver = driver.equals("on");
 		}
 		
-		if(startDate.before(currentDate) || endDate.before(startDate)) {
-			response.sendRedirect("/jsp/error/error.jsp");
+		if (startDate.before(current) || endDate.before(startDate)) {
+			response.sendRedirect("jsp/error/error.jsp");
 		} else {
 			Order order = new Order();
-			order.setCar(carDao.getById(id));
+			order.setPassport(passport);
 			order.setUser(userDao.getUserByEmail(email));
+			order.setCar(carDao.getById(id));
 			order.setStartDate(startDate);
 			order.setEndDate(endDate);
+			order.setDriver(needDriver);
 			order.setStatus(statusDao.getById(Status.WAIT_ORDER_STATUS));
-			order.setPassport(passport);
-			order.setDriver(driver);
-			
 			orderDao.createOrder(order);
-			response.sendRedirect("/userOrders");
+			response.sendRedirect(getServletContext().getContextPath() + "/userOrders");
 		}
+		
 	}
-
 }

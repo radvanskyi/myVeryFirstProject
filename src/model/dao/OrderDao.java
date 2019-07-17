@@ -12,4 +12,5 @@ public interface OrderDao {
 	List<Order> getAllOrders();
 	void update(Order order);
 	void delete(int id);
+	void deleteByCarId(int id);
 }

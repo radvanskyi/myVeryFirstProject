@@ -13,6 +13,6 @@ public interface CarDao {
 	List<Car> getCarsByPrice(int maxPrice);
 	List<Car> getCarsByMark(String mark);
 	Car add(Car car);
-	void update(int id, String s);
+	void update(Car car);
 	void delete(int id);
 }

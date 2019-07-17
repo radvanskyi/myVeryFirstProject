@@ -21,20 +21,20 @@ import model.entity.Order;
 public class OrderDaoImpl implements OrderDao {
 	
 	DataSource ds = DataSourceUtil.getDataSource();
-	UserDao userDao = UserDaoImpl.getUserDaoInstance();
+	UserDao userDao = new UserDaoImpl();
 	CheckDao checkDao = new CheckDaoImpl();
 	CarDao carDao = new CarDaoImpl();
 	StatusDao statusDao = new StatusDaoImpl();
 
 	@Override
 	public Order createOrder(Order order) {
-		String sql = "INSERT INTO orders (passport, user_id, car, startDate, finishDate, driver, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO orders (passport, user_id, car, startDate, endDate, driver, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
 		int k = 0;
 		try (Connection con = ds.getConnection()) {
 			PreparedStatement st = con.prepareStatement(sql);
 			st.setString(++k, order.getPassport());
 			st.setInt(++k, order.getUser().getId());
-			st.setString(++k, order.getCar().getModel());
+			st.setInt(++k, order.getCar().getId());
 			st.setDate(++k, order.getStartDate());
 			st.setDate(++k, order.getEndDate());
 			st.setBoolean(++k, order.isDriver());
@@ -123,10 +123,22 @@ public class OrderDaoImpl implements OrderDao {
 			e.printStackTrace();
 		}
 	}
+	
+	@Override
+	public void deleteByCarId(int id) {
+		String sql = "DELETE FROM orders WHERE car = ?";
+		try (Connection con = ds.getConnection()) {
+			PreparedStatement st = con.prepareStatement(sql);
+			st.setInt(1, id);
+			st.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 
 	@Override
 	public void update(Order order) {
-		String sql = "UPDATE orders SET passport = ?, user_id = ?, check_id = ?, car = ?, startdate = ?, finishdate = ?, driver = ?, status = ? WHERE id = ?";
+		String sql = "UPDATE orders SET passport = ?, user_id = ?, check_id = ?, car = ?, startDate = ?, endDate = ?, driver = ?, status = ? WHERE id = ?";
 		try (Connection con = ds.getConnection()) {
 			PreparedStatement st = con.prepareStatement(sql);
 			st.setString(1, order.getPassport());

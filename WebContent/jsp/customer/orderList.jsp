@@ -12,7 +12,7 @@
                 <div class="row ">
                     <div class="col-lg-3 list-inline">
                         <div class="col-lg-4">
-                            <input name="id" value="${id}" >
+                            <input name="id" value="${id}" hidden>
                         </div>
                         <div class="col-lg-8">
                             <p><f:message key="car.mark"/>: ${mark}</p>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="row list-inline">
-                    <label for="driver"><input type="checkbox" id="driver" name="driver"><f:message
+                    <label for="driver"><input type="checkbox" id="driver" name="driver"> <f:message
                             key="order.boolean.driver"/></label>
                 </div>
                 <div class="row list-inline">

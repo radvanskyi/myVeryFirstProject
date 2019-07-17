@@ -2,7 +2,6 @@ package controller.authentication;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,12 +26,13 @@ public class Registration extends HttpServlet {
 		user.setFirstName(request.getParameter("firstName"));
 		user.setLastName(request.getParameter("lastName"));
 
-		userDao = UserDaoImpl.getUserDaoInstance();
+		userDao = new UserDaoImpl();
 		if (user.getFirstName() != "" && user.getLastName() != "" && 
 				user.getEmail() != "" && user.getPassword() != "") {
 			
-			if (userDao.addUser(user) != null && !userExist(user)) {
-				response.sendRedirect(getServletContext().getContextPath() + "/jsp/authentication/successRegistration.jsp");
+			if (!userExist(user)) {
+				userDao.addUser(user);
+				response.sendRedirect(getServletContext().getContextPath() + "/successRegistration");
 			} else {
 				forwardBackToLoginWhenError(request, response);
 			}
@@ -44,13 +44,12 @@ public class Registration extends HttpServlet {
 
 	private void forwardBackToLoginWhenError(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		RequestDispatcher rd = request.getRequestDispatcher("/jsp/authentication/registration.jsp");
-		rd.forward(request, response);
+		response.sendRedirect("jsp/error/error.jsp");
 	}
 	
 	private boolean userExist(User user) {
 		User user2 = new User();
-		userDao = UserDaoImpl.getUserDaoInstance();
+		userDao = new UserDaoImpl();
 		user2 = userDao.getUserByEmail(user.getEmail());
 		if (user.getEmail().equals(user2.getEmail())) {
 			return true;

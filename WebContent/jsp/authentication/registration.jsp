@@ -1,13 +1,5 @@
 <%@include file="/jsp/taglibs.jsp"%>
 
-
-<c:set var="language"
-	value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale}"
-	scope="session" />
-
-<f:setLocale value="${language}" />
-<f:setBundle basename="controller.internationalization.i18n.lang" />
-
 <html>
 
 <body>

@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.dao.UserDao;
 import model.dao.impl.UserDaoImpl;
-import model.entity.Role;
 import model.entity.User;
 
 @WebServlet("/addManager")
@@ -29,26 +28,22 @@ public class AddManager extends HttpServlet {
 		user.setFirstName(request.getParameter("firstName"));
 		user.setLastName(request.getParameter("lastName"));
 
-        if (user.getFirstName() != "" && user.getLastName() != "" && 
+		if (user.getFirstName() != "" && user.getLastName() != "" && 
 				user.getEmail() != "" && user.getPassword() != "") {
-        	
-        	userDao = UserDaoImpl.getUserDaoInstance();
-        	if (userDao.addUser(user) != null && !userExist(user)) {
-        		userDao.update(user, Role.MANAGER);
+        	if (!userExist(user)) {
+				userDao.addManager(user);
 				response.sendRedirect(getServletContext().getContextPath() + "/managerList");
-        	} else {
-        		request.setAttribute("errorMsg", "Can't sign up. Such user has already signed up.");
-        		request.getRequestDispatcher("/jsp/authentication/registration.jsp").forward(request, response);
-        	}
+			} else {
+				response.sendRedirect("jsp/error/error.jsp");
+			}
         } else {
-        	request.setAttribute("errorMsg", "Please, input data in all fields!");
-			request.getRequestDispatcher(getServletContext().getContextPath() + "/jsp/authentication/registration.jsp").forward(request, response);
+        	response.sendRedirect("jsp/error/error.jsp");
         }
     }
 	
 	private boolean userExist(User user) {
 		User user2 = new User();
-		userDao = UserDaoImpl.getUserDaoInstance();
+		userDao = new UserDaoImpl();
 		user2 = userDao.getUserByEmail(user.getEmail());
 		if (user.getEmail().equals(user2.getEmail())) {
 			return true;

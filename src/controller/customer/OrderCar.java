@@ -20,6 +20,7 @@ public class OrderCar extends HttpServlet {
 		CarDao carDao = new CarDaoImpl();
 		int id = Integer.parseInt(request.getParameter("id"));
 		Car car = carDao.getById(id);
+		System.out.println(car);
 		
 		request.setAttribute("id", id);
 		request.setAttribute("mark", car.getMark());

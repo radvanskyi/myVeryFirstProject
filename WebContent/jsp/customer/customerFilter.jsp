@@ -1,5 +1,5 @@
 <%@include file="/jsp/taglibs.jsp" %>
-<c:if test="${marks!=null}">
+<c:if test="${marks != null}">
     <div class="container">
         <div class="col-lg-3">
             <div class="dropdown">

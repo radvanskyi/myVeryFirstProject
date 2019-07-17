@@ -1,17 +1,9 @@
 <%@include file="/jsp/taglibs.jsp" %>
 
-<c:set var="language"
-       value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale}"
-       scope="session"/>
-
-<f:setLocale value="${language}"/>
-<f:setBundle basename="controller.internationalization.i18n.lang"/>
-
-<html>
 <%@ include file="/jsp/head.jsp" %>
+<html>
 <body>
 <div id="wrapper">
-
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
         <div class="header-right">
             <c:choose>
@@ -28,10 +20,10 @@
                         <form class="form-inline" method="post" action="${pageContext.request.contextPath}/login">
                             <c:choose>
                                 <c:when test="${language=='ru_RU'}">
-                                    <input name="locale" value="ru" />
+                                    <input name="locale" value="ru" hidden/>
                                 </c:when>
                                 <c:otherwise>
-                                    <input name="locale" value="${language}" />
+                                    <input name="locale" value="${language}" hidden/>
                                 </c:otherwise>
                             </c:choose>
                             <input class="form-control" placeholder="<f:message key="enter.email"/>" type="text"
@@ -83,21 +75,6 @@
             </ul>
         </div>
     </nav>
-    
-    <div id="page-wrapper">
-        <%@include file="/jsp/customer/customerFilter.jsp" %>
-        <div id="page-inner">
-
-            <%@include file="/jsp/customer/carList.jsp" %>
-
-            <c:if test="${not empty sessionScope.role}">
-                <%--User Orders List--%>
-                <%@include file="/jsp/customer/customerOrders.jsp" %>
-            </c:if>
-
-        </div>
-    </div>
 </div>
-<!-- /. WRAPPER  -->
 </body>
 </html>

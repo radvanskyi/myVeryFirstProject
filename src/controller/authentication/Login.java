@@ -23,15 +23,17 @@ public class Login extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		userDao = UserDaoImpl.getUserDaoInstance();
+		userDao = new UserDaoImpl();
 		Locale locale = new Locale(request.getParameter("locale"));
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		User user = userDao.getUserByEmail(email);
-		if (user != null && !user.getRole().getName().equals("blocked")) {
+		if (user.getFirstName() == null && user.getLastName() == null && user.getPassword() == null) {
+			forwardBackToLoginWhenError(request, response);
+		} else if (!user.getRole().getName().equals("blocked")) {
 			loginUser(request, response, password, user, locale);
 		} else {
-			forwardBackToLoginWhenError(request, response);
+			response.sendRedirect("jsp/error/error.jsp");
 		}
 	}
 
@@ -56,17 +58,16 @@ public class Login extends HttpServlet {
 			response.sendRedirect(getServletContext().getContextPath() + "/admin");
 			break;
 		case "customer":
-			response.sendRedirect(getServletContext().getContextPath() + "/carList");
+			response.sendRedirect(getServletContext().getContextPath() + "/customer");
 			break;
 		case "manager":
-			response.sendRedirect(getServletContext().getContextPath() + "/orderList");
+			response.sendRedirect(getServletContext().getContextPath() + "/manager");
 			break;
 		}
 	}
 
 	private void forwardBackToLoginWhenError(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.setAttribute("errorMsg", "Password or Email is not valid");
-		request.getRequestDispatcher("jsp/authentication/login.jsp").forward(request, response);
+		response.sendRedirect("jsp/error/error.jsp");
 	}
 }

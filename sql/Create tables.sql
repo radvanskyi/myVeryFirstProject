@@ -1,11 +1,6 @@
+DROP DATABASE finalproject;
+CREATE DATABASE finalproject;
 USE finalproject;
-DROP TABLE cars;
-DROP TABLE users;
-DROP TABLE checks;
-DROP TABLE orders;
-DROP TABLE roles;
-DROP TABLE statuses;
-DROP TABLE classes;
 
 CREATE TABLE statuses (
   id INTEGER NOT NULL PRIMARY KEY,
@@ -43,6 +38,7 @@ INSERT INTO classes VALUES (0,'A');
 INSERT INTO classes VALUES (1,'B');
 INSERT INTO classes VALUES (2,'C');
 INSERT INTO classes VALUES (3,'D');
+INSERT INTO classes VALUES (4, 'E');
 INSERT INTO classes VALUES (5,'F');
 INSERT INTO classes VALUES (6,'M');
 INSERT INTO classes VALUES (7,'S');
@@ -82,19 +78,19 @@ CREATE TABLE users(
   password VARCHAR (50) NOT NULL,
   firstName VARCHAR (30) NOT NULL,
   lastName VARCHAR (30) NOT NULL,
-  role INTEGER NOT NULL DEFAULT "2" REFERENCES Roles(id)
+  role INTEGER NOT NULL REFERENCES Roles(id)
 );
 
 INSERT INTO users(email, password, firstName, lastName, role) VALUES ('ivanov@ukr.net', '1', 'Ivanov', 'Ivan', "0");
-INSERT INTO users(email, password, firstName, lastName, role) VALUES ('petrov@ukr.net', '1', 'Petrov', 'Petr', "1");
-INSERT INTO users(email, password, firstName, lastName) VALUES ('denisov@ukr.net', '1', 'Serheev', 'Denis');
+INSERT INTO users(email, password, firstName, lastName, role) VALUES ('petrov@ukr.net', '1', 'Petrov', 'Petr', '1');
+INSERT INTO users(email, password, firstName, lastName, role) VALUES ('denisov@ukr.net', '1', 'Serheev', 'Denis', '2');
 
 CREATE TABLE orders(
   id INTEGER NOT NULL auto_increment PRIMARY KEY,
-  passport VARCHAR (12) NOT NULL,
+  passport VARCHAR (10) NOT NULL,
   user_id INTEGER NOT NULL REFERENCES Users(id),
   check_id INTEGER REFERENCES Checks(id),
-  car INTEGER NOT NULL REFERENCES Cars(id),
+  car INTEGER(10) NOT NULL REFERENCES Cars(id),
   startdate DATE NOT NULL,
   finishdate DATE NOT NULL,
   driver BOOLEAN NOT NULL,

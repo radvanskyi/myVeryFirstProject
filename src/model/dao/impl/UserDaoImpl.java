@@ -12,30 +12,21 @@ import javax.sql.DataSource;
 import model.dao.RoleDao;
 import model.dao.UserDao;
 import model.dbutil.DataSourceUtil;
+import model.entity.Role;
 import model.entity.User;
 
 public class UserDaoImpl implements UserDao {
 
-    private static UserDaoImpl instance;
     private DataSource ds = DataSourceUtil.getDataSource();
-
-    private UserDaoImpl(){}
-
-    public static synchronized UserDaoImpl getUserDaoInstance() {
-        if(instance == null) {
-            instance = new UserDaoImpl();
-        }
-        return instance;
-    }
 
     @Override
     public User getUserById(int id) {
     	String sql = "SELECT * FROM users WHERE id = ?";
         User user = new User();
-        try (Connection connection = ds.getConnection()) {
-            PreparedStatement statement = connection.prepareStatement(sql);
-            statement.setInt(1, id);
-            ResultSet rs = statement.executeQuery();
+        try (Connection con = ds.getConnection()) {
+            PreparedStatement st = con.prepareStatement(sql);
+            st.setInt(1, id);
+            ResultSet rs = st.executeQuery();
             if (rs.next()) {
             	executeUser(user, rs);
             }
@@ -59,10 +50,10 @@ public class UserDaoImpl implements UserDao {
     public List<User> getAllUsers() {
     	String sql = "SELECT * FROM users";
         List<User> users = new ArrayList<>();
-        try (Connection connection = ds.getConnection()){
-            PreparedStatement statement = connection.prepareStatement(sql);
-            statement.getResultSet();
-            ResultSet rs = statement.executeQuery();
+        try (Connection con = ds.getConnection()){
+            PreparedStatement st = con.prepareStatement(sql);
+            st.getResultSet();
+            ResultSet rs = st.executeQuery();
             while (rs.next()) {
                 User user = new User();
                 executeUser(user, rs);
@@ -77,14 +68,15 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User addUser(User user) {
-    	String sql = "INSERT INTO users (email, password, firstName, lastName) VALUES (?, ?, ?, ?)";
-        try (Connection connection = ds.getConnection()) {
+    	String sql = "INSERT INTO users (email, password, firstName, lastName, role) VALUES (?, ?, ?, ?, ?)";
+        try (Connection con = ds.getConnection()) {
         	int k = 0;
-            PreparedStatement st = connection.prepareStatement(sql);
+            PreparedStatement st = con.prepareStatement(sql);
             st.setString(++k, user.getEmail());
             st.setString(++k, user.getPassword());
             st.setString(++k, user.getFirstName());
             st.setString(++k, user.getLastName());
+            st.setInt(++k, Role.CUSTOMER);
             st.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -96,8 +88,8 @@ public class UserDaoImpl implements UserDao {
 	public User getUserByEmail(String email) {
 		String sql = "SELECT * FROM users WHERE email = ?";
 		User user = new User();
-		try (Connection connection = ds.getConnection()) {
-			PreparedStatement st = connection.prepareStatement(sql);
+		try (Connection con = ds.getConnection()) {
+			PreparedStatement st = con.prepareStatement(sql);
 			st.setString(1, email);
 			ResultSet rs = st.executeQuery();
 			if (rs.next()) {
@@ -121,16 +113,23 @@ public class UserDaoImpl implements UserDao {
 			e.printStackTrace();
 		}
 	}
-
+	
 	@Override
-	public void update(User user, int role) {
-		String sql = "UPDATE users SET role = " + role + " WHERE id = " + user.getId();
-		try (Connection con = ds.getConnection()) {
-			PreparedStatement st = con.prepareStatement(sql);
-			st.executeQuery();
-		} catch (SQLException e) {
+	public User addManager(User user) {
+		String sql = "INSERT INTO users (email, password, firstName, lastName, role) VALUES (?, ?, ?, ?, ?)";
+		try(Connection con = ds.getConnection()) {
+			int k = 0;
+            PreparedStatement st = con.prepareStatement(sql);
+            st.setString(++k, user.getEmail());
+            st.setString(++k, user.getPassword());
+            st.setString(++k, user.getFirstName());
+            st.setString(++k, user.getLastName());
+            st.setInt(++k, Role.MANAGER);
+            st.executeUpdate();
+		}catch (SQLException e) {
 			e.printStackTrace();
 		}
+		return user;
 	}
 
 	@Override
@@ -141,7 +140,7 @@ public class UserDaoImpl implements UserDao {
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setInt(1, role);
 			ResultSet rs = statement.executeQuery();
-			if (rs.next()) {
+			while (rs.next()) {
 				User user = new User();
 				executeUser(user, rs);
 				users.add(user);
@@ -150,5 +149,23 @@ public class UserDaoImpl implements UserDao {
 			e.printStackTrace();
 		}
 		return users;
+	}
+
+	@Override
+	public void updateUser(User user) {
+		String sql = "UPDATE users SET email = ?, password = ?, firstName = ?, lastName = ?, role = ? WHERE id = ?";
+		try (Connection con = ds.getConnection()) {
+			int k = 0;
+			PreparedStatement st = con.prepareStatement(sql);
+			st.setString(++k, user.getEmail());
+            st.setString(++k, user.getPassword());
+            st.setString(++k, user.getFirstName());
+            st.setString(++k, user.getLastName());
+            st.setInt(++k, user.getRole().getId());
+            st.setInt(++k, user.getId());
+            st.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 }
