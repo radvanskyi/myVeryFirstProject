@@ -1,5 +1,15 @@
 <%@include file="/jsp/taglibs.jsp"%>
 
+<div class="col-lg-4">
+	<form class="form-group">
+		<select id="language" class="form-control" name="language"
+			onchange="submit()">
+			<option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
+			<option value="ru" ${language == 'ru' ? 'selected' : ''}>Russian</option>
+		</select>
+	</form>
+</div>
+
 <a href="${pageContext.request.contextPath}/return">
 	<button class="btn btn-primary">
 		<f:message key="manager.button.return" />
@@ -10,8 +20,9 @@
 <c:if test="${not empty waitList}">
 	<div class="panel panel-primary">
 		<p class="h3 panel-heading">
-			<f:message key="unfinshedOrders" /></p>
-			
+			<f:message key="unfinshedOrders" />
+		</p>
+
 		<div class="col-lg-2">
 			<form method="post"
 				action="${pageContext.request.contextPath}/makeCheck">
@@ -57,7 +68,7 @@
 				</div>
 			</div>
 			<div class="row"></div>
-            ======================
+			======================
         </c:forEach>
 	</div>
 </c:if>
@@ -124,7 +135,7 @@
 					<c:when test="${check.status.name=='accepted'}">
 						<c:choose>
 							<c:when test="${status=='rent'}">
-								<form action="${pageContext.request.contextPath}/payForCar"
+								<form action="${pageContext.request.contextPath}/payOrder"
 									method="post">
 									<input name="id" value="${check.id}" hidden> <input
 										name="rent" value="true" hidden>
@@ -135,9 +146,9 @@
 							</c:when>
 							<c:when test="${status=='repair'}">
 								<form method="post"
-									action="${pageContext.request.contextPath}/payForCar">
-									<input name="repair" value="true" hidden> <input
-										name="id" value="${check.id}" hidden>
+									action="${pageContext.request.contextPath}/payOrder">
+									<input name="id" value="${check.id}" hidden> <input
+										name="repair" value="true" hidden>
 									<button type="submit" class="btn btn-success">
 										<f:message key="user.button.payRepair" />
 									</button>
@@ -174,6 +185,7 @@
 				</c:choose>
 			</div>
 		</div>
+		======================
 	</c:forEach>
 </c:if>
 

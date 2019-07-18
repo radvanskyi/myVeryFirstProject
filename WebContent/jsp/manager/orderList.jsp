@@ -1,60 +1,18 @@
 <%@include file="/jsp/taglibs.jsp"%>
 
+<%@ include file="/jsp/head.jsp" %>
 <html>
 <body>
-	<c:choose>
-		<c:when test="${empty sessionScope.role}">
-			<div class="col-lg-4">
-				<form class="form-group">
-					<select id="language" class="form-control" name="language"
-						onchange="submit()">
-						<option value="ru" ${language == 'ru' ? 'selected' : ''}>Russian</option>
-						<option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
-					</select>
-				</form>
-			</div>
-			<div class="col-lg-8">
-				<form class="form-inline" method="post"
-					action="${pageContext.request.contextPath}/login">
-					<c:choose>
-						<c:when test="${language=='ru_RU'}">
-							<input name="locale" value="ru" hidden />
-						</c:when>
-						<c:otherwise>
-							<input name="locale" value="${language}" hidden />
-						</c:otherwise>
-					</c:choose>
-					<input class="form-control"
-						placeholder="<f:message key="enter.email"/>" type="text"
-						name="email" required=""> <input class="form-control"
-						placeholder="<fmt:message key="enter.password"/>" type="password"
-						required="" name="password">
-
-					<button type="submit" class="btn btn-primary">
-						<f:message key="button.signin" />
-					</button>
-				</form>
-				<div>
-					<a
-						href="${pageContext.request.contextPath}/jsp/authentication/registration.jsp">
-						<button class="btn btn-warning">
-							<f:message key="button.register" />
-						</button>
-					</a>
-				</div>
-			</div>
-		</c:when>
-
-		<c:otherwise>
-			<a href="${pageContext.request.contextPath}/logout"
-				class="btn btn-danger" title="Logout"><i class="btn-danger"><f:message
-						key="button.logout" /></i></a>
-		</c:otherwise>
-	</c:choose>
+	<a href="${pageContext.request.contextPath}/return">
+		<button class="btn btn-primary">
+			<f:message key="manager.button.return" />
+		</button>
+	</a>
+	<br>
 
 	<div class="container col-lg-12">
 		<c:forEach var="check" items="${checks}">
-			<div class="panel panel-success">
+			<div class="panel panel-primary">
 				<div class="panel-body">
 					<div class="col-lg-6">
 						<p class="h4">
@@ -62,7 +20,6 @@
 						</p>
 						<c:forEach var="order" items="${check.orders}">
 							<div class="panel-body">
-								<c:set var="status" value="${order.status.name}" />
 								<div class="col-lg-6">
 									<f:message key="car.mark" />
 									: ${order.car.mark}<br />
@@ -112,5 +69,6 @@
 			</div>
 		</c:forEach>
 	</div>
+
 </body>
 </html>

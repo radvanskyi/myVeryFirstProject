@@ -40,14 +40,14 @@ public class MakeCheck extends HttpServlet {
 				orders.add(o);
 			}
 		}
-		
+
+		check.setOrders(orders);
 		check.setDate(new Date(System.currentTimeMillis()));
 		check.setDescription(Check.NEW_CHECK);
 		check.setPrice(totalPrice(check));
 		check.setStatus(statusDao.getById(Status.DEFAULT_CHECK_STATUS));
-		check.setOrders(orders);
 		checkDao.createCheck(check);
-		
+
 		for (Order o : orders) {
 			o.setStatus(statusDao.getById(Status.RENT_ORDER_STATUS));
 			o.setCheck(check);
@@ -82,5 +82,4 @@ public class MakeCheck extends HttpServlet {
 		
 		return total;
 	}
-
 }

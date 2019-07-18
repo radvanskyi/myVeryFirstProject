@@ -31,16 +31,6 @@
 			</div>
 
 		</nav>
-		<div id="page-wrapper">
-			<div id="page-inner">
-
-
-				<%@include file="/jsp/manager/newOrders.jsp"%>
-
-				<%@include file="/jsp/manager/orderList.jsp"%>
-
-			</div>
-		</div>
 	</div>
 </body>
 </html>

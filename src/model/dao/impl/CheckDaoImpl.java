@@ -24,12 +24,18 @@ public class CheckDaoImpl implements CheckDao {
 		String sql = "INSERT INTO checks (date, description, price, status) VALUES (?, ?, ?, ?)";
 		int k = 0;
 		try(Connection con = ds.getConnection()) {
-			PreparedStatement st = con.prepareStatement(sql);
+			PreparedStatement st = con.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
 			st.setDate(++k, check.getDate());
 			st.setString(++k, check.getDescription());
 			st.setInt(++k, check.getPrice());
 			st.setInt(++k,  check.getStatus().getId());
 			st.executeUpdate();
+			
+			ResultSet rs = st.getGeneratedKeys();
+			if (rs.next()) {
+				int id = rs.getInt(1);
+				check.setId(id);
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -102,6 +108,7 @@ public class CheckDaoImpl implements CheckDao {
             st.setString(++k, check.getDescription());
             st.setInt(++k, check.getPrice());
             st.setInt(++k, check.getStatus().getId());
+            st.setInt(++k, check.getId());
             st.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();

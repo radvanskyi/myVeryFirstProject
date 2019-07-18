@@ -157,7 +157,7 @@ public class CarDaoImpl implements CarDao {
 
 	@Override
 	public void update(Car car) {
-		String sql = "UPDATE cars SET mark = ?, model = ?, price = ?, class = ?, status = ? WHERE id = ?";
+		String sql = "UPDATE cars SET mark = ?, model = ?, price = ?, carClass = ?, status = ? WHERE id = ?";
 		try (Connection con = ds.getConnection()) {
 			PreparedStatement st = con.prepareStatement(sql);
 			int k = 0;
@@ -167,7 +167,7 @@ public class CarDaoImpl implements CarDao {
 			st.setInt(++k, car.getCarClass().getId());
 			st.setInt(++k, car.getStatus().getId());
 			st.setInt(++k, car.getId());
-			st.executeQuery();
+			st.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

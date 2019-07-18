@@ -35,13 +35,13 @@
 				</div>
 				<div class="col-md-3">
 					<p>
-						<f:message key="user.firstname" />
+						<f:message key="user.firstName" />
 						: ${manager.firstName}
 					</p>
 				</div>
 				<div class="col-md-3">
 					<p>
-						<f:message key="user.lastname" />
+						<f:message key="user.lastName" />
 						: ${manager.lastName}
 					</p>
 				</div>

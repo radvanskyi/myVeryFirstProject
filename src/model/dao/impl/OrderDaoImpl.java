@@ -31,7 +31,7 @@ public class OrderDaoImpl implements OrderDao {
 		String sql = "INSERT INTO orders (passport, user_id, car, startDate, endDate, driver, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
 		int k = 0;
 		try (Connection con = ds.getConnection()) {
-			PreparedStatement st = con.prepareStatement(sql);
+			PreparedStatement st = con.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
 			st.setString(++k, order.getPassport());
 			st.setInt(++k, order.getUser().getId());
 			st.setInt(++k, order.getCar().getId());
@@ -40,6 +40,12 @@ public class OrderDaoImpl implements OrderDao {
 			st.setBoolean(++k, order.isDriver());
 			st.setInt(++k, order.getStatus().getId());
 			st.executeUpdate();
+			
+			ResultSet rs = st.getGeneratedKeys();
+			if (rs.next()) {
+				int id = rs.getInt(1);
+				order.setId(id);
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
