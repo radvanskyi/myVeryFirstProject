@@ -21,9 +21,11 @@ public class CarList extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CarDao carDao = new CarDaoImpl();
 		List<Car> list = new ArrayList<>(carDao.getAllCars());
+		request.setAttribute("list", list);
+		
+		
 
 		
-		request.setAttribute("list", list);
 		request.getRequestDispatcher("jsp/customer/carList.jsp").forward(request, response);
 	}
 }

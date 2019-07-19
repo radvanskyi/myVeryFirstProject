@@ -1,6 +1,5 @@
 <%@include file="/jsp/taglibs.jsp"%>
 
-<%@ include file="/jsp/head.jsp" %>
 <html>
 <body>
 	<a href="${pageContext.request.contextPath}/return">

@@ -86,7 +86,7 @@
 				</form>
 
 				<form class="form-group"
-					action="${pageContext.request.contextPath}/editCarServlet" method="post">
+					action="${pageContext.request.contextPath}/editCarPage" method="post">
 					<div class="col-md-2">
 						<input name="id" value="${car.id}" hidden>
 						<button type="submit" class="btn btn-success">

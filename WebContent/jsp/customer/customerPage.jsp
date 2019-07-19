@@ -57,7 +57,7 @@
                 <li>
                     <div class="user-img-div">
                         <div class="inner-text">
-                            <p>${username}</p>
+                            <p>${email}</p>
                         </div>
                     </div>
                 </li>

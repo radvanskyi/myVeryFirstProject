@@ -68,7 +68,6 @@
 				</div>
 			</div>
 			<div class="row"></div>
-			======================
         </c:forEach>
 	</div>
 </c:if>
@@ -185,7 +184,6 @@
 				</c:choose>
 			</div>
 		</div>
-		======================
 	</c:forEach>
 </c:if>
 

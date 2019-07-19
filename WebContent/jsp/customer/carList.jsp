@@ -6,7 +6,7 @@
 <title>Cars List</title>
 </head>
 <body>
-	<div class="col-lg-4">
+	<div class="col-sm-4">
 		<form class="form-group">
 			<select id="language" class="form-control" name="language"
 				onchange="submit()">
@@ -21,8 +21,7 @@
 			<f:message key="manager.button.return" />
 		</button>
 	</a>
-	<br> ======================
-		<c:forEach var="car" items="${list}">
+	<c:forEach var="car" items="${list}">
 		<form action="${pageContext.request.contextPath}/orderCar"
 			method="post">
 			<div class="panel panel-primary">
@@ -81,7 +80,6 @@
 								</c:otherwise>
 							</c:choose>
 						</div>
-						======================
 					</div>
 				</div>
 			</div>

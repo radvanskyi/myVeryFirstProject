@@ -19,7 +19,7 @@
 				<c:forEach var="order" items="${check.orders}">
 					<c:set var="Norder" value="${order}" />
 					<div class="panel-body">
-						<div class="col-lg-4">
+						<div class="col-lg-3">
 							<f:message key="car.mark" />
 							: ${order.car.mark}<br />
 							<f:message key="car.model" />
@@ -29,7 +29,7 @@
 							<f:message key="car.costPerDay" />
 							: ${order.car.price}<br />
 						</div>
-						<div class="col-lg-5">
+						<div class="col-lg-3">
 							<f:message key="user" />
 							<f:message key="order.passport" />
 							: ${order.passport}<br />
