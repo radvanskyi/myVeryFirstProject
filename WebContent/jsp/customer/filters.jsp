@@ -8,7 +8,7 @@
                         class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <c:forEach var="mark" items="${marks}">
-                        <li><a href="${pageContext.request.contextPath}/filterUtils?mark=${mark}">${mark}</a></li>
+                        <li><a href="${pageContext.request.contextPath}/carSort?mark=${mark}">${mark}</a></li>
                     </c:forEach>
                 </ul>
             </div>
@@ -21,20 +21,20 @@
                 <ul class="dropdown-menu">
                     <c:forEach var="carClass" items="${classes}">
                         <li>
-                            <a href="${pageContext.request.contextPath}/filterUtils?carClass=${carClass}">${carClass}</a>
+                            <a href="${pageContext.request.contextPath}/carSort?carClass=${carClass}">${carClass}</a>
                         </li>
                     </c:forEach>
                 </ul>
             </div>
         </div>
         <div class="col-lg-3">
-            <a href="${pageContext.request.contextPath}/filterUtils?cost=true">
-                <button class="btn btn-primary"><f:message key="user.sortByCost"/></button>
+            <a href="${pageContext.request.contextPath}/carSort?price=true">
+                <button class="btn btn-primary"><f:message key="user.sortByPrice"/></button>
             </a>
         </div>
         <div class="col-lg-3">
-            <a href="${pageContext.request.contextPath}/filterUtils?name=true">
-                <button class="btn btn-primary"><f:message key="user.sortByName"/></button>
+            <a href="${pageContext.request.contextPath}/carSort?model=true">
+                <button class="btn btn-primary"><f:message key="user.sortByModel"/></button>
             </a>
         </div>
     </div>
