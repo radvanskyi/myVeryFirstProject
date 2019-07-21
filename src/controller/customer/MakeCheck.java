@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import model.dao.CheckDao;
 import model.dao.OrderDao;
 import model.dao.StatusDao;
@@ -22,11 +24,17 @@ import model.entity.Check;
 import model.entity.Order;
 import model.entity.Status;
 
+/* 
+ * Create a check to send it to a customer for payment
+ */
+
 @WebServlet("/makeCheck")
 public class MakeCheck extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private static final Logger logger = Logger.getLogger(MakeCheck.class);   
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		logger.info("Creating a check");
 		OrderDao orderDao = new OrderDaoImpl();
 		List<Order> orders = new ArrayList<>();
 		CheckDao checkDao = new CheckDaoImpl();
@@ -37,6 +45,7 @@ public class MakeCheck extends HttpServlet {
 		
 		for (Order o : orderDao.getAllOrders()) {
 			if (o.getUser().getEmail().equals(email) && o.getStatus().getName().equals("waiting")) {
+				logger.info("Creating a list of orders");
 				orders.add(o);
 			}
 		}
@@ -51,6 +60,7 @@ public class MakeCheck extends HttpServlet {
 		for (Order o : orders) {
 			o.setStatus(statusDao.getById(Status.RENT_ORDER_STATUS));
 			o.setCheck(check);
+			logger.info("Updating order");
 			orderDao.update(o);
 		}
 		

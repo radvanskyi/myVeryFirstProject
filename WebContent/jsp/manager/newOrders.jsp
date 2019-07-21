@@ -1,12 +1,5 @@
 <%@include file="/jsp/taglibs.jsp"%>
 
-<a href="${pageContext.request.contextPath}/return">
-	<button class="btn btn-primary">
-		<f:message key="manager.button.return" />
-	</button>
-</a>
-<br>
-
 <div class="container col-lg-12">
 	<div class="panel-heading">
 		<p>

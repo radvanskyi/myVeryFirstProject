@@ -1,22 +1,5 @@
 <%@include file="/jsp/taglibs.jsp" %>
 
-<div class="col-lg-4">
-	<form class="form-group">
-		<select id="language" class="form-control" name="language"
-			onchange="submit()">
-			<option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
-			<option value="ru" ${language == 'ru' ? 'selected' : ''}>Russian</option>
-		</select>
-	</form>
-</div>
-
-<a href="${pageContext.request.contextPath}/return">
-	<button class="btn btn-primary">
-		<f:message key="manager.button.return" />
-	</button>
-</a> 
-<br>
-
 <c:forEach var="user" items="${list}">
     <div class="panel panel-primary">
         <div class="row panel-body">
@@ -28,10 +11,10 @@
                     <p><f:message key="user.password"/>: ${user.password}</p>
                 </div>
                 <div class="col-md-2">
-                    <p><f:message key="user.firstname"/>: ${user.firstName}</p>
+                    <p><f:message key="user.firstName"/>: ${user.firstName}</p>
                 </div>
                 <div class="col-md-2">
-                    <p><f:message key="user.lastname"/>: ${user.lastName}</p>
+                    <p><f:message key="user.lastName"/>: ${user.lastName}</p>
                 </div>
                 <div class="col-md-2">
                     <p><f:message key="user.role"/>: ${user.role.name}</p>
@@ -61,5 +44,4 @@
             </div>
         </div>
     </div>
-    ======================
 </c:forEach>

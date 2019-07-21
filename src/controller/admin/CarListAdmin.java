@@ -14,6 +14,10 @@ import model.dao.CarDao;
 import model.dao.impl.CarDaoImpl;
 import model.entity.Car;
 
+/* 
+ * List of all cars for the admin
+ */
+
 @WebServlet("/carListAdmin")
 public class CarListAdmin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -24,9 +28,5 @@ public class CarListAdmin extends HttpServlet {
 
 		request.setAttribute("list", list);
 		request.getRequestDispatcher("jsp/admin/carListAdmin.jsp").forward(request, response);
-	}
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 	}
 }

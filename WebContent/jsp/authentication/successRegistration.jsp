@@ -7,11 +7,8 @@
 <title>Success registration</title>
 </head>
 <body>
+	<a href="${pageContext.request.contextPath}/jsp/authentication/login.jsp">Home</a>
 	<p align="center">Congratulations! You have been successfully
 		signed up!</p>
-		
-	<br/>
-	
-	<a href="${pageContext.request.contextPath}/jsp/authentication/login.jsp">Home</a>
 </body>
 </html>

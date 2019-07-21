@@ -81,9 +81,9 @@ CREATE TABLE users(
   role INTEGER NOT NULL REFERENCES roles(id)
 );
 
-INSERT INTO users(email, password, firstName, lastName, role) VALUES ('ivanov@ukr.net', '1', 'Ivanov', 'Ivan', "0");
-INSERT INTO users(email, password, firstName, lastName, role) VALUES ('petrov@ukr.net', '1', 'Petrov', 'Petr', '1');
-INSERT INTO users(email, password, firstName, lastName, role) VALUES ('denisov@ukr.net', '1', 'Serheev', 'Denis', '2');
+INSERT INTO users(email, password, firstName, lastName, role) VALUES ('admin@a', '1', 'Admin', 'admin', "0");
+INSERT INTO users(email, password, firstName, lastName, role) VALUES ('manager@m', '1', 'Manager', 'manager', '1');
+INSERT INTO users(email, password, firstName, lastName, role) VALUES ('customer@c', '1', 'Customer', 'customer', '2');
 
 CREATE TABLE orders(
   id INTEGER NOT NULL auto_increment PRIMARY KEY,

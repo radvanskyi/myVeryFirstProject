@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import model.dao.CheckDao;
 import model.dao.OrderDao;
 import model.dao.StatusDao;
@@ -18,10 +20,15 @@ import model.entity.Check;
 import model.entity.Order;
 import model.entity.Status;
 
+/* 
+ * Allows a customer to return a car back  
+ */
+
 @WebServlet("/returnCar")
 public class ReturnCar extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	private static final Logger logger = Logger.getLogger(ReturnCar.class);   
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CheckDao checkDao = new CheckDaoImpl();
 		OrderDao orderDao = new OrderDaoImpl();
@@ -39,7 +46,7 @@ public class ReturnCar extends HttpServlet {
 			o.setStatus(statusDao.getById(Status.RETURN_ORDER_STATUS));
 			orderDao.update(o);
 		}
-		
+		logger.info("Car was retuned");
 		response.sendRedirect(getServletContext().getContextPath() + "/userOrders");
 	}
 

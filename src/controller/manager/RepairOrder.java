@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import model.dao.CheckDao;
 import model.dao.OrderDao;
 import model.dao.StatusDao;
@@ -21,10 +23,17 @@ import model.entity.Check;
 import model.entity.Order;
 import model.entity.Status;
 
+/* 
+ * A manager makes new check 
+ * to repair a car and 
+ * sends it to a customer
+ */
+
 @WebServlet("/repairOrder")
 public class RepairOrder extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	private static final Logger logger = Logger.getLogger(RepairOrder.class);   
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CheckDao checkDao = new CheckDaoImpl();
 		OrderDao orderDao = new OrderDaoImpl();
@@ -54,7 +63,7 @@ public class RepairOrder extends HttpServlet {
 		
 		order.setCheck(check);
 		orderDao.update(order);
-
+		logger.info("Check for repairing was made");
 		request.getRequestDispatcher("/jsp/manager/newOrders.jsp").forward(request, response);
 	}
 

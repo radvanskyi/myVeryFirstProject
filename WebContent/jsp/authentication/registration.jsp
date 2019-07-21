@@ -1,17 +1,5 @@
 <%@include file="/jsp/taglibs.jsp"%>
 
-<html>
-
-<body>
-	<div class="col-lg-1">
-		<form>
-			<select id="language" name="language" onchange="submit()">
-				<option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
-				<option value="ru" ${language == 'ru' ? 'selected' : ''}>Russian</option>
-			</select>
-		</form>
-	</div>
-
 	<div class="col-lg-12 row center-block">
 		<div class="col-lg-offset-5 col-lg-2">
 			<h3>
@@ -60,5 +48,4 @@
 			</form>
 		</div>
 	</div>
-</body>
-</html>
+<%@include file="/jsp/foot.jsp"%>

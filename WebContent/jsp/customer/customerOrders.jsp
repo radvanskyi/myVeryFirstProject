@@ -1,22 +1,5 @@
 <%@include file="/jsp/taglibs.jsp"%>
 
-<div class="col-lg-4">
-	<form class="form-group">
-		<select id="language" class="form-control" name="language"
-			onchange="submit()">
-			<option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
-			<option value="ru" ${language == 'ru' ? 'selected' : ''}>Russian</option>
-		</select>
-	</form>
-</div>
-
-<a href="${pageContext.request.contextPath}/return">
-	<button class="btn btn-primary">
-		<f:message key="manager.button.return" />
-	</button>
-</a>
-<br>
-
 <c:if test="${not empty waitList}">
 	<div class="panel panel-primary">
 		<p class="h3 panel-heading">
@@ -186,5 +169,5 @@
 		</div>
 	</c:forEach>
 </c:if>
-
+<%@include file="/jsp/foot.jsp"%>
 

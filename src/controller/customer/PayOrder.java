@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import model.dao.CarDao;
 import model.dao.CheckDao;
 import model.dao.OrderDao;
@@ -21,11 +23,18 @@ import model.entity.Check;
 import model.entity.Order;
 import model.entity.Status;
 
+/* 
+ * A customer can rent a car
+ * or to pay for car damages 
+ */
+
 @WebServlet("/payOrder")
 public class PayOrder extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	private static final Logger logger = Logger.getLogger(PayOrder.class);   
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		logger.info("Paying for order");
 		CheckDao checkDao = new CheckDaoImpl();
 		StatusDao statusDao = new StatusDaoImpl();
 		OrderDao orderDao = new OrderDaoImpl();
@@ -44,6 +53,7 @@ public class PayOrder extends HttpServlet {
 				car.setStatus(statusDao.getById(Status.DISABLED_CAR_STATUS));
 				carDao.update(car);
 			}
+			logger.info("Car was rent");
 			check.setStatus(statusDao.getById(Status.PAID_CHECK_STATUS));
 			check.setDescription(Check.PAID_CHECK);
 			
@@ -54,6 +64,7 @@ public class PayOrder extends HttpServlet {
 				car.setStatus(statusDao.getById(Status.DEFAULT_CAR_STATUS));
 				carDao.update(car);
 			}
+			logger.info("Car was repaired and ready for use");
 			check.setStatus(statusDao.getById(Status.SUCCESS_CHECK_STATUS));
 			check.setDescription(Check.REPAIR_SUCCESS);
 			checkDao.update(check);

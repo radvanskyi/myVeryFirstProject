@@ -8,20 +8,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import model.dao.UserDao;
 import model.dao.impl.UserDaoImpl;
 import model.entity.User;
 
+/* 
+ * The admin can add new manager 
+ */
+
 @WebServlet("/addManager")
 public class AddManager extends HttpServlet {
-
 	private static final long serialVersionUID = -9042715943935337228L;
-
+	private static final Logger logger = Logger.getLogger(AddManager.class);
+	
 	UserDao userDao;
 	
 	@Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		logger.info("Adding a manager");
+		
 		User user = new User();
 		user.setEmail(request.getParameter("email"));
 		user.setPassword(request.getParameter("password"));
@@ -34,9 +41,11 @@ public class AddManager extends HttpServlet {
 				userDao.addManager(user);
 				response.sendRedirect(getServletContext().getContextPath() + "/managerList");
 			} else {
+				logger.error("The user is already exists");
 				response.sendRedirect("jsp/error/error.jsp");
 			}
         } else {
+        	logger.error("Not valid information while adding a manager");
         	response.sendRedirect("jsp/error/error.jsp");
         }
     }

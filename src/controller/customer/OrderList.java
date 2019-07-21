@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import model.dao.CarDao;
 import model.dao.OrderDao;
 import model.dao.StatusDao;
@@ -20,11 +22,18 @@ import model.dao.impl.UserDaoImpl;
 import model.entity.Order;
 import model.entity.Status;
 
+/* 
+ * Show all customer's orders
+ */
+
 @WebServlet("/orderList")
 public class OrderList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	private static final Logger logger = Logger.getLogger(OrderList.class);   
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		logger.info("Making order");
+		
 		OrderDao orderDao = new OrderDaoImpl();
 		CarDao carDao = new CarDaoImpl();
 		UserDao userDao = new UserDaoImpl();
@@ -44,6 +53,7 @@ public class OrderList extends HttpServlet {
 		}
 		
 		if(startDate.before(currentDate) || endDate.before(startDate)) {
+			logger.info("Wrong input data");
 			response.sendRedirect("/jsp/error/error.jsp");
 		} else {
 			Order order = new Order();
@@ -56,6 +66,7 @@ public class OrderList extends HttpServlet {
 			order.setDriver(driver);
 			
 			orderDao.createOrder(order);
+			logger.info("Order has been made");
 			response.sendRedirect("/userOrders");
 		}
 	}

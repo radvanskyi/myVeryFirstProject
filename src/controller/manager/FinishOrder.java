@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import model.dao.CarDao;
 import model.dao.CheckDao;
 import model.dao.OrderDao;
@@ -20,10 +22,14 @@ import model.entity.Check;
 import model.entity.Order;
 import model.entity.Status;
 
+/* 
+ * Servlet approves cars' return by user
+ */
 @WebServlet("/finishOrder")
 public class FinishOrder extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	private static final Logger logger = Logger.getLogger(FinishOrder.class);    
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CheckDao checkDao = new CheckDaoImpl();
 		OrderDao orderDao = new OrderDaoImpl();
@@ -46,7 +52,7 @@ public class FinishOrder extends HttpServlet {
 		check.setStatus(statusDao.getById(Status.SUCCESS_CHECK_STATUS));
 		check.setDescription(Check.SUCCESS_CAR_APPROV);
 		checkDao.update(check);
-		
+		logger.info("order was finished");
 		request.getRequestDispatcher("/jsp/manager/newOrders.jsp").forward(request, response);
 	}
 

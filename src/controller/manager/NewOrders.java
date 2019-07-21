@@ -10,17 +10,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.dao.CheckDao;
+import org.apache.log4j.Logger;
+
 import model.dao.OrderDao;
-import model.dao.impl.CheckDaoImpl;
 import model.dao.impl.OrderDaoImpl;
 import model.entity.Check;
 import model.entity.Order;
 
+/* 
+ * Shows new orders to a manager
+ */
+
 @WebServlet("/newOrders")
 public class NewOrders extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	private static final Logger logger = Logger.getLogger(NewOrders.class);   
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		List<Check> checks = new ArrayList<>();
@@ -49,7 +54,7 @@ public class NewOrders extends HttpServlet {
 
 		request.setAttribute("unpaid", unpaid);
 		request.setAttribute("returned", returned);
-
+		logger.info("List of new orders");
 		request.getRequestDispatcher("/jsp/manager/newOrders.jsp").forward(request, response);
 	}
 

@@ -20,23 +20,6 @@ public class CarDaoImpl implements CarDao {
 
 	private DataSource ds = DataSourceUtil.getDataSource();
 
-	@Override
-	public Car getCarByModel(String model) {
-		Car car = new Car();
-		try (Connection con = ds.getConnection()) {
-			String sql = "Select * FROM cars WHERE model = ?";
-			PreparedStatement st = con.prepareStatement(sql);
-			st.setString(1, model);
-			ResultSet rs = st.executeQuery();
-			if (rs.next()) {
-				executeCar(car, rs);
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return car;
-	}
-
 	private void executeCar(Car car, ResultSet rs) throws SQLException {
 		ClassDao classDaoImpl = new ClassDaoImpl();
 		StatusDao statusDaoImpl = new StatusDaoImpl();
@@ -49,67 +32,10 @@ public class CarDaoImpl implements CarDao {
 	}
 
 	@Override
-	public List<Car> getCarsByClass(String level) {
-		List<Car> cars = new ArrayList<>();
-		try (Connection con = ds.getConnection()) {
-			String sql = "Select * FROM cars WHERE carClass = ?";
-			PreparedStatement st = con.prepareStatement(sql);
-			st.getResultSet();
-			ResultSet rs = st.executeQuery();
-			while (rs.next()) {
-				Car car = new Car();
-				executeCar(car, rs);
-				cars.add(car);
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return cars;
-	}
-
-	@Override
 	public List<Car> getAllCars() {
 		List<Car> cars = new ArrayList<>();
 		try (Connection con = ds.getConnection()) {
 			String sql = "SELECT * FROM cars";
-			PreparedStatement st = con.prepareStatement(sql);
-			st.getResultSet();
-			ResultSet rs = st.executeQuery();
-			while (rs.next()) {
-				Car car = new Car();
-				executeCar(car, rs);
-				cars.add(car);
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return cars;
-	}
-
-	@Override
-	public List<Car> getCarsByPrice(int maxPrice) {
-		List<Car> cars = new ArrayList<>();
-		try (Connection con = ds.getConnection()) {
-			String sql = "Select * FROM cars WHERE price <= ?";
-			PreparedStatement st = con.prepareStatement(sql);
-			st.getResultSet();
-			ResultSet rs = st.executeQuery();
-			while (rs.next()) {
-				Car car = new Car();
-				executeCar(car, rs);
-				cars.add(car);
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return cars;
-	}
-
-	@Override
-	public List<Car> getCarsByMark(String mark) {
-		List<Car> cars = new ArrayList<>();
-		try (Connection con = ds.getConnection()) {
-			String sql = "Select * FROM cars WHERE mark = ?";
 			PreparedStatement st = con.prepareStatement(sql);
 			st.getResultSet();
 			ResultSet rs = st.executeQuery();
