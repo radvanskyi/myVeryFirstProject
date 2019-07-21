@@ -11,4 +11,7 @@ public interface CarDao {
 	Car add(Car car);
 	void update(Car car);
 	void delete(int id);
+	List<Car> getCarsByMark(String mark);
+	List<Car> getCarsByClass(String carClass);
+	List<Car> getAllCars(String field, String direction);
 }

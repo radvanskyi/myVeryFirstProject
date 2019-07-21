@@ -1,38 +1,36 @@
 <%@include file="/jsp/taglibs.jsp"%>
 
-<div class="col-lg-12">
-	<div class="col-lg-offset-2 col-lg-8 panel panel-primary">
-		<div class="panel-heading">
-			<f:message key="order.enterInfo" />
+<div class="container-fluid">
+	<div class="card">
+		<div class="card-header">
+			<h3>
+				<f:message key="order.enterInfo" />
+			</h3>
 		</div>
-		<div class="panel-body">
-			<form action="${pageContext.request.contextPath}/rentCar"
-				method="post" class="form-control">
-				<div class="row ">
-					<div class="col-lg-3 list-inline">
-						<div class="col-lg-4">
-							<input name="id" value="${id}" hidden>
-						</div>
-						<div class="col-lg-8">
-							<p>
-								<f:message key="car.mark" />
-								: ${mark}
-							</p>
-						</div>
+		<form action="${pageContext.request.contextPath}/rentCar"
+			method="post" class="form">
+			<div class="card-body">
+				<input name="id" value="${id}" hidden>
+				<div class="row font-weight-bold">
+					<div class="col-md-3">
+						<p class="bold">
+							<f:message key="car.mark" />
+							: ${mark}
+						</p>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-3">
 						<p>
 							<f:message key="car.model" />
 							: ${model}
 						</p>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-5">
 						<p>
 							<f:message key="car.costPerDay" />
 							: ${price}
 						</p>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-1">
 						<p>
 							<f:message key="car.carClass" />
 							: ${carClass}
@@ -40,44 +38,47 @@
 					</div>
 				</div>
 				<div class="row list inline">
-					<div class="col-lg-3">
+					<div class="col-md-3">
 						<label for="passport"><f:message key="order.passport" />:</label>
 					</div>
-					<div class="col-lg-9">
+					<div class="col-md-9">
 						<input type="number" required="" name="passport"
 							class="form-control" id="passport">
 					</div>
 				</div>
 				<div class="row list-inline">
-					<label for="driver"><input type="checkbox" id="driver"
-						name="driver"> <f:message key="order.boolean.driver" /></label>
+					<div class="col-md-3">
+						<label for="driver"><f:message key="order.boolean.driver" /></label>
+					</div>
+					<div class="col-md-9">
+						<input type="checkbox" id="driver" name="driver">
+					</div>
 				</div>
 				<div class="row list-inline">
-					<div class="col-lg-3">
+					<div class="col-md-3">
 						<label for="startDate"><f:message key="order.startDate" />:
 						</label>
 					</div>
-					<div class="col-lg-9">
+					<div class="col-md-9">
 						<input type="date" required="" class="form-control" id="startDate"
 							name="startDate">
 					</div>
 				</div>
 				<div class="row list-inline">
-					<div class="col-lg-3">
+					<div class="col-md-3">
 						<label for="endDate"><f:message key="order.endDate" />: </label>
 					</div>
-					<div class="col-lg-9">
+					<div class="col-md-9">
 						<input type="date" required="" class="form-control" id="endDate"
 							name="endDate">
 					</div>
 				</div>
-				<div class="row col-lg-3 center-block">
-					<button type="submit" class="btn btn-primary">
-						<f:message key="manager.button.confirm" />
-					</button>
-				</div>
-			</form>
-
-		</div>
+			</div>
+			<div class="card-footer">
+				<button type="submit" class="btn btn-primary">
+					<f:message key="manager.button.confirm" />
+				</button>
+			</div>
+		</form>
 	</div>
 </div>

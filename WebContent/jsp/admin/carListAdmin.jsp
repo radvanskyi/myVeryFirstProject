@@ -3,8 +3,7 @@
 
 
 <form method="post" action="${pageContext.request.contextPath}/addCar"
-	class="form-group inline">
-	<div class="container-fluid">
+	class="border-bottom mb-2 pb-2">
 		<div class="row">
 			<div class="col-md-2">
 				<label for="mark"><f:message key="car.mark" />: ${car.mark}</label>
@@ -22,61 +21,64 @@
 					required="" />
 			</div>
 			<div class="col-md-2">
-				<label for="carClass"><f:message key="car.carClass" />:
-					${car.carClass.id}</label> <input id="carClass" name="carClass"
-					class="form-control" required="" />
-			</div>
+				<label for="carClass"><f:message key="car.carClass" />:${car.carClass.id}</label> 
+				<select class="custom-select" id="carClass" name="carClass">
+				<c:forEach var="carClass" items="${classes}">
+				<option value="${carClass.getId()}">${carClass.getName()}</option>
+					</c:forEach>
+			</select>
+
+		</div>
 			<div class="col-md-4 list-inline align-self-end">
 				<button type="submit" class="btn btn-info">
 					<f:message key="admin.button.addCar" />
 				</button>
 			</div>
 		</div>
-	</div>
 </form>
 <c:forEach var="car" items="${list}">
-	<form class="form-group inline"
-		action="${pageContext.request.contextPath}/carListAdmin" method="post">
-		<div class="col-md-12">
-			<input name="id" value="${car.id}" hidden />
-		</div>
+	<div class="row">
+			<div class="col-md-2">
+				<label for="mark"><f:message key="car.mark" />: ${car.mark}</label>
+			</div>
+			<div class="col-md-2">
+				<label for="model"><f:message key="car.model" />:
+					${car.model}</label>
+			</div>
+			<div class="col-md-1">
+				<label for="price"><f:message key="car.price" />:
+					${car.price}</label>
+			</div>
+			<div class="col-md-1">
+				<label for="carClass"><f:message key="car.carClass" />:
+					${car.carClass.name}</label>
+			</div>
+			<div class="col-md-2">
+				<label for="status"><f:message key="global.status" />:
+					${car.status.name}</label>
+			</div>
+		<div class="col-md-2">
+			<form class="form-group"
+				action="${pageContext.request.contextPath}/editCarPage"
+				method="post">
 
-		<div class="col-md-2">
-			<label for="mark"><f:message key="car.mark" />: ${car.mark}</label>
-		</div>
-		<div class="col-md-2">
-			<label for="model"><f:message key="car.model" />:
-				${car.model}</label>
-		</div>
-		<div class="col-md-2">
-			<label for="price"><f:message key="car.price" />:
-				${car.price}</label>
-		</div>
-		<div class="col-md-2">
-			<label for="carClass"><f:message key="car.carClass" />:
-				${car.carClass.name}</label>
-		</div>
-		<div class="col-md-2">
-			<label for="status"><f:message key="global.status" />:
-				${car.status.name}</label>
-		</div>
-	</form>
+				<input name="id" value="${car.id}" hidden>
+				<button type="submit" class="btn btn-success">
+					<f:message key="admin.button.edit" />
+				</button>
 
-	<form class="form-group"
-		action="${pageContext.request.contextPath}/editCarPage" method="post">
-		<div class="col-md-2">
-			<input name="id" value="${car.id}" hidden>
-			<button type="submit" class="btn btn-success">
-				<f:message key="admin.button.edit" />
-			</button>
+			</form>
 		</div>
-	</form>
+		<div class="col-md-2">
+			<form method="post"
+				action="${pageContext.request.contextPath}/deleteCar">
+				<input name="id" value="${car.id}" hidden>
+				<button type="submit" name="rent" class="btn btn-danger">
+					<f:message key="admin.button.delete" />
+				</button>
+			</form>
+		</div>
+	</div>
 
-	<form method="post"
-		action="${pageContext.request.contextPath}/deleteCar">
-		<input name="id" value="${car.id}" hidden>
-		<button type="submit" name="rent" class="btn btn-danger">
-			<f:message key="admin.button.delete" />
-		</button>
-	</form>
 </c:forEach>
+<%@include file="/jsp/foot.jsp"%>

@@ -23,14 +23,14 @@ import model.entity.Order;
 import model.entity.Status;
 
 /* 
- * Servlet approves cars' return by user
+ * Servlet approves cars' return by customers
  */
 @WebServlet("/finishOrder")
 public class FinishOrder extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = Logger.getLogger(FinishOrder.class);    
 	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CheckDao checkDao = new CheckDaoImpl();
 		OrderDao orderDao = new OrderDaoImpl();
 		CarDao carDao = new CarDaoImpl();
@@ -52,8 +52,9 @@ public class FinishOrder extends HttpServlet {
 		check.setStatus(statusDao.getById(Status.SUCCESS_CHECK_STATUS));
 		check.setDescription(Check.SUCCESS_CAR_APPROV);
 		checkDao.update(check);
+		
 		logger.info("order was finished");
-		request.getRequestDispatcher("/jsp/manager/newOrders.jsp").forward(request, response);
+		response.sendRedirect(getServletContext().getContextPath() + "/newOrders");		
 	}
 
 }

@@ -1,29 +1,22 @@
 <%@include file="/jsp/taglibs.jsp"%>
 
-
-<c:forEach var="manager" items="${list}">
-	<div class="panel panel-primary">
-		<div class="row panel-body">
-			<div class="col-md-12">
-				<div class="col-md-3">
+<div class="row">
+	<c:forEach var="manager" items="${list}">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body">
 					<p>
 						<f:message key="user.email" />
 						: ${manager.email}
 					</p>
-				</div>
-				<div class="col-md-3">
 					<p>
 						<f:message key="user.password" />
 						: ${manager.password}
 					</p>
-				</div>
-				<div class="col-md-3">
 					<p>
 						<f:message key="user.firstName" />
 						: ${manager.firstName}
 					</p>
-				</div>
-				<div class="col-md-3">
 					<p>
 						<f:message key="user.lastName" />
 						: ${manager.lastName}
@@ -31,5 +24,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</c:forEach>
+	</c:forEach>
+</div>
+
+<%@include file="/jsp/foot.jsp"%>

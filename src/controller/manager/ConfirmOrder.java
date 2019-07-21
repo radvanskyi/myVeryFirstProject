@@ -38,7 +38,7 @@ public class ConfirmOrder extends HttpServlet {
 		check.setDescription(Check.ACCEPTED_CHECK);
 		checkDao.update(check);
 		
-		request.getRequestDispatcher("/jsp/manager/newOrders.jsp").forward(request, response);
+		response.sendRedirect(getServletContext().getContextPath() + "/newOrders");		
 	}
 
 }

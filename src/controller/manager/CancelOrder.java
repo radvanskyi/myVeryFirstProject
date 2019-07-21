@@ -39,7 +39,7 @@ public class CancelOrder extends HttpServlet {
 		check.setStatus(statusDao.getById(Status.CANCELED_CHECK_STATUS));
 		checkDao.update(check);
 		
-		request.getRequestDispatcher("/jsp/manager/newOrders.jsp").forward(request, response);
+		response.sendRedirect(getServletContext().getContextPath() + "/newOrders");
 	}
 
 }

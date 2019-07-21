@@ -14,7 +14,7 @@ import model.dao.CarDao;
 import model.dao.impl.CarDaoImpl;
 
 /* 
- * The admin can delete a car from the Database
+ * Admin can delete a car from the Database
  */
 
 @WebServlet("/deleteCar")
@@ -29,7 +29,7 @@ public class DeleteCar extends HttpServlet {
 		CarDao carDao = new CarDaoImpl();
 		
 		carDao.delete(id);
-		response.sendRedirect(getServletContext().getContextPath() + "/carList");
+		response.sendRedirect(getServletContext().getContextPath() + "/carListAdmin");
 	}
 
 }

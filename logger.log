@@ -1,0 +1,682 @@
+2019-07-21 17:24 [ INFO]                    Logout:    25 - Logging out
+2019-07-21 17:24 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 17:24 [ INFO]                     Login:    69 - Customer
+2019-07-21 17:24 [ INFO]                  Customer:    23 - Customer page
+2019-07-21 18:22 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 18:22 [ INFO]                     Login:    69 - Customer
+2019-07-21 18:22 [ INFO]                  Customer:    23 - Customer page
+2019-07-21 18:22 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:22 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:22 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:22 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:22 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:22 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:22 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:22 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:22 [ INFO]                   CarSort:    52 - Cars sorting by carClass
+2019-07-21 18:22 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:22 [ INFO]                   CarSort:    52 - Cars sorting by carClass
+2019-07-21 18:22 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:22 [ INFO]                   CarSort:    52 - Cars sorting by carClass
+2019-07-21 18:22 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:22 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:22 [ INFO]                   CarSort:    52 - Cars sorting by carClass
+2019-07-21 18:22 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:22 [ INFO]                   CarSort:    52 - Cars sorting by carClass
+2019-07-21 18:23 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:23 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:23 [ INFO]                   CarSort:    52 - Cars sorting by carClass
+2019-07-21 18:23 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:23 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:23 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:23 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:23 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:23 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:23 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:23 [ INFO]                   CarSort:    52 - Cars sorting by carClass
+2019-07-21 18:24 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:24 [ INFO]                   CarSort:    52 - Cars sorting by carClass
+2019-07-21 18:24 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:24 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:24 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:24 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:24 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:24 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:24 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:24 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:24 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:24 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:24 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 18:24 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:24 [ INFO]                   CarSort:    52 - Cars sorting by carClass
+2019-07-21 18:26 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:26 [ INFO]                   CarSort:    52 - Cars sorting by carClass: C
+2019-07-21 18:27 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:27 [ INFO]                   CarSort:    52 - Cars sorting by carClass: C
+2019-07-21 18:27 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:27 [ INFO]                CarDaoImpl:    51 - Select * FROM cars WHERE carClass = 'C'
+2019-07-21 18:27 [ INFO]                   CarSort:    52 - Cars sorting by carClass: C
+2019-07-21 18:35 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:35 [ INFO]                CarDaoImpl:    51 - Select * FROM cars WHERE carClass = 'A'
+2019-07-21 18:35 [ INFO]                   CarSort:    52 - Cars sorting by carClass: A
+2019-07-21 18:35 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:35 [ INFO]                CarDaoImpl:    51 - Select * FROM cars WHERE carClass = 'B'
+2019-07-21 18:35 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:36 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:36 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:36 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:36 [ INFO]                   CarSort:    52 - Cars sorting by carClass: J
+2019-07-21 18:36 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:36 [ INFO]                   CarSort:    52 - Cars sorting by carClass: J
+2019-07-21 18:36 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:36 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:37 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:37 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:39 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:39 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:40 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:40 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:42 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:42 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:43 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:43 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:45 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:45 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:45 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:45 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:47 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:47 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:47 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:47 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:48 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:48 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:49 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:49 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:49 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:49 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:50 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:50 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:50 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:50 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:50 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:50 [ INFO]                   CarSort:    52 - Cars sorting by carClass: B
+2019-07-21 18:50 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 18:50 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:51 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:51 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:53 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:54 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:55 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:56 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:57 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 18:58 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:00 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:04 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:05 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:05 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:06 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:06 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:06 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:06 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:06 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:06 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:07 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:08 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:09 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:09 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:10 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:10 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:11 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:12 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:12 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 19:12 [ INFO]                   RentCar:    59 - Wrong input data
+2019-07-21 19:13 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 19:13 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:13 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 19:13 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 19:13 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:17 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:17 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:20 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:20 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 19:21 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:21 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 19:21 [ INFO]                   RentCar:    54 - Driver is on
+2019-07-21 19:21 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 19:21 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:21 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:21 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-21 19:21 [ INFO]                 MakeCheck:    48 - Creating a list of orders
+2019-07-21 19:21 [ INFO]                 MakeCheck:    63 - Updating order
+2019-07-21 19:21 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:22 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 19:22 [ INFO]                   RentCar:    54 - Driver is on
+2019-07-21 19:22 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 19:22 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:22 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:22 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:23 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:24 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 19:24 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:24 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 19:24 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 19:24 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:25 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 19:25 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:26 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:26 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 19:26 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 19:26 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:27 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 19:27 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:30 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 19:30 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 19:30 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:31 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 19:31 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 19:31 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 19:31 [ INFO]                   RentCar:    54 - Driver is on
+2019-07-21 19:31 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 19:31 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:31 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-21 19:31 [ INFO]                 MakeCheck:    48 - Creating a list of orders
+2019-07-21 19:31 [ INFO]                 MakeCheck:    48 - Creating a list of orders
+2019-07-21 19:31 [ INFO]                 MakeCheck:    48 - Creating a list of orders
+2019-07-21 19:31 [ INFO]                 MakeCheck:    63 - Updating order
+2019-07-21 19:31 [ INFO]                 MakeCheck:    63 - Updating order
+2019-07-21 19:31 [ INFO]                 MakeCheck:    63 - Updating order
+2019-07-21 19:31 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:34 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:35 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:39 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:40 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:40 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:41 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:42 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:43 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:44 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:45 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:46 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:47 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 19:48 [ INFO]                    Logout:    25 - Logging out
+2019-07-21 19:48 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 19:48 [ INFO]                     Login:    65 - Admin
+2019-07-21 19:48 [ INFO]                     Admin:    23 - Admin page
+2019-07-21 20:00 [ INFO]                    AddCar:    31 - Adding a car
+2019-07-21 20:00 [ INFO]                    AddCar:    31 - Adding a car
+2019-07-21 20:15 [ INFO]                    AddCar:    31 - Adding a car
+2019-07-21 20:15 [ INFO]                  UserList:    29 - List of all customers
+2019-07-21 20:16 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:16 [ INFO]                 DeleteCar:    26 - Deleting a manager
+2019-07-21 20:16 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 20:16 [ INFO]                 DeleteCar:    26 - Deleting a manager
+2019-07-21 20:16 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 20:17 [ INFO]                 DeleteCar:    26 - Deleting a manager
+2019-07-21 20:17 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 20:17 [ INFO]                 DeleteCar:    26 - Deleting a manager
+2019-07-21 20:17 [ INFO]               ManagerList:    30 - List of all managers
+2019-07-21 20:17 [ INFO]                  UserList:    29 - List of all customers
+2019-07-21 20:18 [ INFO]                  UserList:    29 - List of all customers
+2019-07-21 20:18 [ INFO]               ManagerList:    30 - List of all managers
+2019-07-21 20:18 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:18 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:19 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:19 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:19 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:20 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:20 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:20 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:20 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:21 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-21 20:22 [ INFO]               ManagerList:    30 - List of all managers
+2019-07-21 20:26 [ INFO]               ManagerList:    30 - List of all managers
+2019-07-21 20:26 [ INFO]                  UserList:    29 - List of all customers
+2019-07-21 20:28 [ INFO]                  UserList:    29 - List of all customers
+2019-07-21 20:28 [ INFO]                 BlockUser:    41 - Blocking a customer
+2019-07-21 20:28 [ INFO]                  UserList:    29 - List of all customers
+2019-07-21 20:28 [ INFO]                 BlockUser:    37 - Unblocking a customer
+2019-07-21 20:28 [ INFO]                  UserList:    29 - List of all customers
+2019-07-21 20:29 [ INFO]                    Logout:    25 - Logging out
+2019-07-21 20:29 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 20:29 [ INFO]                     Login:    73 - Manager
+2019-07-21 20:29 [ INFO]                   Manager:    22 - Manager page
+2019-07-21 20:29 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:29 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:31 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:32 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:33 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:33 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:34 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:35 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:35 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:35 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:36 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:36 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:36 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:38 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:38 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:39 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:39 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:39 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:39 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:40 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:40 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:40 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:41 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:41 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:41 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:42 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:43 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:44 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:45 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:45 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:45 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:46 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:47 [ INFO]                 NewOrders:    57 - List of new orders
+2019-07-21 20:57 [ INFO]                 NewOrders:    60 - List of new orders
+2019-07-21 20:58 [ INFO]                 NewOrders:    60 - List of new orders
+2019-07-21 20:58 [ INFO]                 NewOrders:    60 - List of new orders
+2019-07-21 20:59 [ INFO]          OrderListManager:    44 - List of all orders
+2019-07-21 21:09 [ INFO]                 NewOrders:    60 - List of new orders
+2019-07-21 21:09 [ INFO]                 NewOrders:    60 - List of new orders
+2019-07-21 21:10 [ INFO]                 NewOrders:    60 - List of new orders
+2019-07-21 21:10 [ INFO]                 NewOrders:    60 - List of new orders
+2019-07-21 21:10 [ INFO]                 NewOrders:    60 - List of new orders
+2019-07-21 21:20 [ INFO]                 NewOrders:    58 - List of new orders
+2019-07-21 21:21 [ INFO]                 NewOrders:    58 - List of new orders
+2019-07-21 21:21 [ INFO]                 NewOrders:    58 - List of new orders
+2019-07-21 21:25 [ INFO]                 NewOrders:    58 - List of new orders
+2019-07-21 21:28 [ INFO]                 NewOrders:    58 - List of new orders
+2019-07-21 21:28 [ INFO]                 NewOrders:    58 - List of new orders
+2019-07-21 21:28 [ INFO]                 NewOrders:    58 - List of new orders
+2019-07-21 21:28 [ INFO]                 NewOrders:    58 - List of new orders
+2019-07-21 21:31 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-21 21:31 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-21 21:32 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-21 21:32 [ INFO]                    Logout:    25 - Logging out
+2019-07-21 21:32 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 21:33 [ INFO]                  UserList:    42 - Success registration
+2019-07-21 21:33 [ INFO]                     Login:    69 - Customer
+2019-07-21 21:33 [ INFO]                  Customer:    23 - Customer page
+2019-07-21 21:33 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 21:33 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 21:33 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 21:33 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 21:33 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 21:33 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-21 21:33 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-21 21:33 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-21 21:33 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 21:33 [ INFO]                    Logout:    25 - Logging out
+2019-07-21 21:33 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 21:33 [ INFO]                     Login:    81 - Wrong input data while login
+2019-07-21 21:34 [ INFO]                     Login:    73 - Manager
+2019-07-21 21:34 [ INFO]                   Manager:    22 - Manager page
+2019-07-21 21:34 [ INFO]          OrderListManager:    44 - List of all orders
+2019-07-21 21:34 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-21 21:35 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-21 21:35 [ INFO]          OrderListManager:    44 - List of all orders
+2019-07-21 21:35 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-21 21:35 [ INFO]          OrderListManager:    44 - List of all orders
+2019-07-21 21:38 [ INFO]          OrderListManager:    35 - List of all orders
+2019-07-21 21:40 [ INFO]          OrderListManager:    35 - List of all orders
+2019-07-21 21:40 [ INFO]          OrderListManager:    35 - List of all orders
+2019-07-21 21:42 [ INFO]          OrderListManager:    35 - List of all orders
+2019-07-21 21:42 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-21 21:42 [ INFO]          OrderListManager:    35 - List of all orders
+2019-07-21 21:42 [ INFO]                    Logout:    25 - Logging out
+2019-07-21 21:42 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 21:42 [ INFO]                     Login:    69 - Customer
+2019-07-21 21:42 [ INFO]                  Customer:    23 - Customer page
+2019-07-21 21:42 [ INFO]                   CarList:    32 - List of all cars
+2019-07-21 21:42 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 21:42 [ INFO]                   CarSort:    84 - Sorting by price
+2019-07-21 21:42 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 21:42 [ INFO]                   CarSort:    84 - Sorting by price
+2019-07-21 21:42 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 21:42 [ INFO]                   CarSort:    96 - Sorting by model
+2019-07-21 21:42 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 21:42 [ INFO]                   CarSort:    84 - Sorting by price
+2019-07-21 21:42 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 21:42 [ INFO]                   CarSort:    96 - Sorting by model
+2019-07-21 21:42 [ INFO]                   CarSort:    33 - Cars sorting
+2019-07-21 21:42 [ INFO]                   CarSort:    84 - Sorting by price
+2019-07-21 22:04 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:04 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:04 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:04 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:04 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:04 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:04 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:04 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:04 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:04 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:04 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:04 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:04 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:04 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:05 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:05 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:05 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:05 [ INFO]                   CarSort:    52 - Cars sorting by carClass: F
+2019-07-21 22:05 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:05 [ INFO]                   CarSort:    52 - Cars sorting by carClass: A
+2019-07-21 22:05 [ INFO]                   CarList:    35 - List of all cars
+2019-07-21 22:05 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:05 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:06 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:06 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:06 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:06 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:06 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:06 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:06 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:06 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:06 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:06 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:06 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:06 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    55 - Sorting by price
+2019-07-21 22:07 [ INFO]                   CarSort:    35 - Cars sorting
+2019-07-21 22:07 [ INFO]                   CarSort:    58 - Sorting by model
+2019-07-21 23:42 [ INFO]                    Logout:    25 - Logging out
+2019-07-21 23:42 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 23:43 [ INFO]                  UserList:    42 - Success registration
+2019-07-21 23:43 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 23:43 [ INFO]                     Login:    73 - Manager
+2019-07-21 23:43 [ INFO]                   Manager:    22 - Manager page
+2019-07-21 23:44 [ INFO]                     Login:    65 - Admin
+2019-07-21 23:44 [ INFO]                     Admin:    23 - Admin page
+2019-07-21 23:44 [ INFO]                AddManager:    30 - Adding a manager
+2019-07-21 23:44 [ INFO]               ManagerList:    30 - List of all managers
+2019-07-21 23:44 [ INFO]               ManagerList:    30 - List of all managers
+2019-07-21 23:44 [ INFO]                  UserList:    29 - List of all customers
+2019-07-21 23:44 [ INFO]                    Logout:    25 - Logging out
+2019-07-21 23:44 [ INFO]               HomeServlet:    22 - Home
+2019-07-21 23:44 [ INFO]                     Login:    69 - Customer
+2019-07-21 23:44 [ INFO]                  Customer:    23 - Customer page
+2019-07-21 23:44 [ INFO]                   CarList:    35 - List of all cars
+2019-07-21 23:44 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:44 [ INFO]                   CarSort:    52 - Sorting by price
+2019-07-21 23:44 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:44 [ INFO]                   CarSort:    49 - Cars sorting by carClass: D
+2019-07-21 23:44 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:44 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 23:45 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:45 [ INFO]                   CarSort:    49 - Cars sorting by carClass: A
+2019-07-21 23:45 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:45 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-21 23:45 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:45 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarList:    35 - List of all cars
+2019-07-21 23:46 [ INFO]                   CarList:    35 - List of all cars
+2019-07-21 23:46 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:46 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-21 23:46 [ INFO]                   CarList:    35 - List of all cars
+2019-07-21 23:47 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-21 23:47 [ INFO]                   CarSort:    52 - Sorting by price
+2019-07-21 23:47 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 23:47 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 23:47 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 23:47 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 23:47 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-21 23:47 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-21 23:47 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-21 23:47 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 23:47 [ INFO]                   CarList:    35 - List of all cars
+2019-07-21 23:47 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 23:47 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 23:47 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 23:47 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 23:54 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-21 23:54 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-21 23:54 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-21 23:54 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 23:54 [ INFO]                   CarList:    35 - List of all cars
+2019-07-21 23:54 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 23:55 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 23:55 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 23:55 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 23:55 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-21 23:55 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-21 23:55 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-21 23:55 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 23:55 [ INFO]                   CarList:    35 - List of all cars
+2019-07-21 23:55 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 23:56 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 23:56 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 23:56 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 23:56 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-21 23:56 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-21 23:56 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-21 23:56 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-21 23:58 [ INFO]                   CarList:    35 - List of all cars
+2019-07-21 23:58 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-21 23:58 [ INFO]                   RentCar:    37 - Order car page
+2019-07-21 23:58 [ INFO]                   RentCar:    62 - Order was made
+2019-07-21 23:58 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:00 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 00:00 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 00:01 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 00:01 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 00:01 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:01 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 00:01 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 00:01 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 00:01 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:01 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:01 [ INFO]               CancelOrder:    30 - Order was canceled by manager
+2019-07-22 00:01 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:01 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 00:01 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:01 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 00:01 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:03 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 00:03 [ INFO]               CancelOrder:    30 - Order was canceled by manager
+2019-07-22 00:03 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:04 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 00:04 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 00:04 [ INFO]                   RentCar:    59 - Wrong input data
+2019-07-22 00:04 [ INFO]                    Return:    30 - ==> customer
+2019-07-22 00:04 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 00:04 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 00:04 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 00:04 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 00:04 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 00:04 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:04 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 00:04 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 00:04 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 00:04 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:05 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:05 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 00:05 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:05 [ INFO]               CancelOrder:    30 - Order was canceled by manager
+2019-07-22 00:05 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:05 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:05 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 00:05 [ INFO]                  PayOrder:    56 - Car was rent
+2019-07-22 00:05 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:05 [ INFO]                 ReturnCar:    49 - Car was retuned
+2019-07-22 00:05 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:05 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:05 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:10 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:11 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:14 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:16 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:17 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:19 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:19 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:23 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:26 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:26 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:27 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:27 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:27 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:27 [ INFO]               RepairOrder:    66 - Check for repairing was made
+2019-07-22 00:27 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:27 [ INFO]          OrderListManager:    28 - List of all orders
+2019-07-22 00:28 [ INFO]                    Return:    38 - ==> manager
+2019-07-22 00:28 [ INFO]                   Manager:    22 - Manager page
+2019-07-22 00:28 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 00:28 [ INFO]                  PayOrder:    56 - Car was rent
+2019-07-22 00:28 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:28 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:28 [ INFO]          OrderListManager:    28 - List of all orders
+2019-07-22 00:28 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:28 [ INFO]                 ReturnCar:    49 - Car was retuned
+2019-07-22 00:28 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:28 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 00:29 [ INFO]                  PayOrder:    56 - Car was rent
+2019-07-22 00:29 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]                 ReturnCar:    49 - Car was retuned
+2019-07-22 00:29 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:29 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 00:29 [ INFO]                  PayOrder:    67 - Car was repaired and ready for use
+2019-07-22 00:29 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 00:29 [ INFO]               RepairOrder:    66 - Check for repairing was made
+2019-07-22 00:29 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:29 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 00:29 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:29 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 00:29 [ INFO]                  PayOrder:    67 - Car was repaired and ready for use
+2019-07-22 00:29 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:29 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:29 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 00:29 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 00:30 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 00:30 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 00:30 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:30 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 00:30 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 00:30 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 00:30 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:30 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:30 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 00:30 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:30 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:30 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 00:30 [ INFO]                  PayOrder:    56 - Car was rent
+2019-07-22 00:30 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:30 [ INFO]                 ReturnCar:    49 - Car was retuned
+2019-07-22 00:30 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:30 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:30 [ INFO]                    Return:    38 - ==> manager
+2019-07-22 00:30 [ INFO]                   Manager:    22 - Manager page
+2019-07-22 00:30 [ INFO]                    Logout:    25 - Logging out
+2019-07-22 00:30 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 00:31 [ INFO]                    Logout:    25 - Logging out
+2019-07-22 00:31 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 00:31 [ INFO]                     Login:    69 - Customer
+2019-07-22 00:31 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 00:31 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 00:31 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 00:31 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 00:31 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 00:31 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:31 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 00:31 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 00:31 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 00:31 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:31 [ INFO]                     Login:    73 - Manager
+2019-07-22 00:31 [ INFO]                   Manager:    22 - Manager page
+2019-07-22 00:31 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:31 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 00:31 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:31 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 00:31 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:31 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 00:31 [ INFO]                  PayOrder:    56 - Car was rent
+2019-07-22 00:31 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:31 [ INFO]                 ReturnCar:    49 - Car was retuned
+2019-07-22 00:31 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 00:31 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:31 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 00:31 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 00:31 [ INFO]                UserOrders:    49 - List of all customer orders

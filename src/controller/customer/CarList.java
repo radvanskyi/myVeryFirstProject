@@ -15,8 +15,11 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 
 import model.dao.CarDao;
+import model.dao.ClassDao;
 import model.dao.impl.CarDaoImpl;
+import model.dao.impl.ClassDaoImpl;
 import model.entity.Car;
+import model.entity.CarClass;
 
 /* 
  * List of cars for all visitors.
@@ -32,20 +35,17 @@ public class CarList extends HttpServlet {
 		logger.info("List of all cars");
 		
 		CarDao carDao = new CarDaoImpl();
+		ClassDao classDao = new ClassDaoImpl();
 		List<Car> cars = new ArrayList<>(carDao.getAllCars());
 		request.setAttribute("cars", cars);
 		
 		setMarks(request, cars);
-		setClasses(request, cars);
+		setClasses(request, classDao.getAll());
 		
 		request.getRequestDispatcher("/jsp/customer/carList.jsp").forward(request, response);
 	}
 
-	void setClasses(HttpServletRequest request, List<Car> cars) {
-		Set<String> classes = new HashSet<>();
-		for (Car c : cars) {
-			classes.add(c.getCarClass().getName());
-		}
+	void setClasses(HttpServletRequest request, List<CarClass> classes) {
 		request.setAttribute("classes", classes);
 	}
 	

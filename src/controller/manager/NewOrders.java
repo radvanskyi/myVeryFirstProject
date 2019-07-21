@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
+import model.dao.CheckDao;
 import model.dao.OrderDao;
+import model.dao.impl.CheckDaoImpl;
 import model.dao.impl.OrderDaoImpl;
 import model.entity.Check;
 import model.entity.Order;
@@ -30,26 +32,17 @@ public class NewOrders extends HttpServlet {
 			throws ServletException, IOException {
 		List<Check> checks = new ArrayList<>();
 		OrderDao orderDao = new OrderDaoImpl();
+		CheckDao checkDao = new CheckDaoImpl();
 
 		for (Order o : orderDao.getAllOrders()) {
 			checks.add(o.getCheck());
 		}
 
-		List<Check> unpaid = new ArrayList<>();
-		List<Check> returned = new ArrayList<>();
+		List<Check> unpaid = new ArrayList<>(checkDao.getUnpaid());
+		List<Order> returned = new ArrayList<>(orderDao.getReturned());
 
-		for (Check c : checks) {
+		for (Check c : unpaid) {
 			c.setOrders((List<Order>) orderDao.getByCheck(c.getId()));
-			if (c.getStatus().getName().equals("not paid")) {
-				unpaid.add(c);
-			}
-			if (c.getStatus().getName().equals("success")) {
-				for (Order o : c.getOrders()) {
-					if (o.getStatus().getName().equals("returned")) {
-						returned.add(c);
-					}
-				}
-			}
 		}
 
 		request.setAttribute("unpaid", unpaid);

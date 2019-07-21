@@ -114,4 +114,22 @@ public class CheckDaoImpl implements CheckDao {
 			e.printStackTrace();
 		}
 	}
+	
+	@Override
+	public List<Check> getUnpaid() {
+		String sql = "SELECT * FROM checks left join statuses on checks.status = statuses.id WHERE statuses.name = 'not paid'";
+		List<Check> checks	= new ArrayList<>();
+		try(Connection con = ds.getConnection()) {
+			PreparedStatement st = con.prepareStatement(sql);
+			ResultSet rs = st.executeQuery();
+			while(rs.next()) {
+				Check check = new Check();
+				executeCheck(check, rs);
+				checks.add(check);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return checks;
+	}
 }

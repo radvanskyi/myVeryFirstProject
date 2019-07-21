@@ -10,6 +10,7 @@ public interface OrderDao {
 	Order getById(int id);
 	List<Order> getByCheck(int id);
 	List<Order> getAllOrders();
+	List<Order> getReturned();
 	void update(Order order);
 	void delete(int id);
 	void deleteByCarId(int id);

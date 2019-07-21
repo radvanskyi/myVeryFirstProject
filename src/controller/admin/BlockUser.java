@@ -18,7 +18,7 @@ import model.entity.Role;
 import model.entity.User;
 
 /* 
- * The admin can block or unblock a customer
+ * Admin can block or unblock a customer
  */
 
 @WebServlet("/blockUser")
@@ -42,6 +42,7 @@ public class BlockUser extends HttpServlet {
 			user.setRole(roleDao.getById(Role.BLOCKED));
 			userDao.updateUser(user);
 		}
+		
 		response.sendRedirect(getServletContext().getContextPath() + "/userList");
 	}
 

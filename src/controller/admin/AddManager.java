@@ -15,7 +15,7 @@ import model.dao.impl.UserDaoImpl;
 import model.entity.User;
 
 /* 
- * The admin can add new manager 
+ * Admin can add new manager 
  */
 
 @WebServlet("/addManager")

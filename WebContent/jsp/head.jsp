@@ -4,15 +4,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous">
+	
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
 <script
 	src="${pageContext.request.contextPath}/jsp/resource/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <link
 	href="${pageContext.request.contextPath}/jsp/resource/bootstrap-4.3.1-dist/css/bootstrap.min.css"
 	rel="stylesheet" />
-	
+
 </head>
 
 <body>
@@ -33,22 +39,22 @@
 					<c:when test="${sessionScope.role == 'admin'}">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item"><a class="nav-link"
-								href="${pageContext.request.contextPath}/carListAdmin"><i
-									class="fa"></i> <f:message key="admin.carlist" /></a></li>
+								href="${pageContext.request.contextPath}/carListAdmin"><f:message
+										key="admin.carlist" /></a></li>
 							<li class="nav-item"><a class="nav-link"
-								href="${pageContext.request.contextPath}/managerList"><i
-									class="fa"></i> <f:message key="admin.managersList" /></a></li>
+								href="${pageContext.request.contextPath}/managerList"> <f:message
+										key="admin.managersList" /></a></li>
 							<li class="nav-item"><a class="nav-link"
-								href="${pageContext.request.contextPath}/userList"><i
-									class="fa"></i> <f:message key="admin.usersList" /></a></li>
+								href="${pageContext.request.contextPath}/userList"><f:message
+										key="admin.usersList" /></a></li>
 							<li class="nav-item"><a class="nav-link"
 								href="${pageContext.request.contextPath}/jsp/admin/regManager.jsp"><f:message
-										key="admin.button.regManager" /></i></a></li>
+										key="admin.button.regManager" /></a></li>
 
 
 						</ul>
 					</c:when>
-					
+
 					<c:when test="${sessionScope.role == 'manager'}">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item"><a class="nav-link"
@@ -59,10 +65,12 @@
 										key="manager.orderList" /></a></li>
 						</ul>
 					</c:when>
-					
+
 					<c:otherwise>
 						<ul class="navbar-nav mr-auto">
-							<li class="nav-item ${pageContext.request.requestURL == (pageContext.request.contextPath) ? 'active' : ''}"><a class="nav-link"
+							<li
+								class="nav-item ${pageContext.request.requestURL == (pageContext.request.contextPath) ? 'active' : ''}"><a
+								class="nav-link"
 								href="${pageContext.request.contextPath}/carList"> <f:message
 										key="admin.carlist" /></a></li>
 							<c:if test="${not empty sessionScope.role}">
@@ -75,7 +83,7 @@
 						</ul>
 					</c:otherwise>
 				</c:choose>
-				
+
 				<form class="form-inline">
 					<select id="language" class="form-control" name="language"
 						onchange="submit()">
@@ -111,7 +119,7 @@
 							</a>
 						</form>
 					</c:when>
-					
+
 					<c:otherwise>
 						<a href="${pageContext.request.contextPath}/logout"
 							class="btn btn-danger ml-2" title="Logout"><i
@@ -121,4 +129,4 @@
 			</div>
 		</nav>
 
-		<div id="content pt-10">
+		<div id="content" class="p-2"	>

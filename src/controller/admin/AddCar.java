@@ -17,7 +17,7 @@ import model.dao.impl.ClassDaoImpl;
 import model.entity.Car;
 
 /* 
- * The admin can add new car to the Database
+ * Admin can add new car to the Database
  */
 
 @WebServlet("/addCar")

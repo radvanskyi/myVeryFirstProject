@@ -15,7 +15,7 @@ import model.dao.impl.CarDaoImpl;
 import model.entity.Car;
 
 /* 
- * The admin can change the rent price of a car
+ * Admin can change the rent price of a car
  */
 
 @WebServlet("/editCar")

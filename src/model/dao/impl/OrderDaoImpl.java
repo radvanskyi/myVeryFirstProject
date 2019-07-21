@@ -162,5 +162,23 @@ public class OrderDaoImpl implements OrderDao {
 			e.printStackTrace();
 		}
 	} 
+	
+	@Override
+	public List<Order> getReturned() {
+		List<Order> orders = new ArrayList<>();
+		String sql = "SELECT * FROM orders INNER JOIN statuses on orders.status = statuses.id WHERE statuses.name = 'returned'";
+		try (Connection con = ds.getConnection()) {
+			PreparedStatement st = con.prepareStatement(sql);
+			ResultSet rs = st.executeQuery();
+			while (rs.next()) {
+				Order order = new Order();
+		        executeOrder(order, rs);
+		        orders.add(order);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return orders;
+	}
 
 }

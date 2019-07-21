@@ -19,7 +19,45 @@ import model.entity.Car;
 public class CarDaoImpl implements CarDao {
 
 	private DataSource ds = DataSourceUtil.getDataSource();
+	
+	@Override
+	public List<Car> getCarsByMark(String mark) {
+		List<Car> cars = new ArrayList<>();
+		try (Connection con = ds.getConnection()) {
+			String sql = "Select * FROM cars WHERE mark = '" + mark + "'";
+			PreparedStatement st = con.prepareStatement(sql);
+			st.getResultSet();
+			ResultSet rs = st.executeQuery();
+			while (rs.next()) {
+				Car car = new Car();
+				executeCar(car, rs);
+				cars.add(car);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return cars;
+	}
 
+	@Override
+	public List<Car> getCarsByClass(String carClass) {
+		List<Car> cars = new ArrayList<>();
+		try (Connection con = ds.getConnection()) {
+			String sql = "Select cars.* FROM cars LEFT JOIN classes on cars.carClass = classes.id WHERE classes.name = '" + carClass + "'";
+			PreparedStatement st = con.prepareStatement(sql);
+			st.getResultSet();
+			ResultSet rs = st.executeQuery();
+			while (rs.next()) {
+				Car car = new Car();
+				executeCar(car, rs);
+				cars.add(car);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return cars;
+	}
+	
 	private void executeCar(Car car, ResultSet rs) throws SQLException {
 		ClassDao classDaoImpl = new ClassDaoImpl();
 		StatusDao statusDaoImpl = new StatusDaoImpl();
@@ -114,5 +152,24 @@ public class CarDaoImpl implements CarDao {
 			e.printStackTrace();
 		}
 		return car;
+	}
+	
+	@Override
+	public List<Car> getAllCars(String field, String direction) {
+		List<Car> cars = new ArrayList<>();
+		try (Connection con = ds.getConnection()) {
+			String sql = "SELECT * FROM cars ORDER BY " + field + " " + direction;
+			PreparedStatement st = con.prepareStatement(sql);
+			st.getResultSet();
+			ResultSet rs = st.executeQuery();
+			while (rs.next()) {
+				Car car = new Car();
+				executeCar(car, rs);
+				cars.add(car);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return cars;
 	}
 }

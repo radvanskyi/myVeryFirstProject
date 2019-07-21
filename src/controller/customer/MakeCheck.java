@@ -45,10 +45,10 @@ public class MakeCheck extends HttpServlet {
 		
 		for (Order o : orderDao.getAllOrders()) {
 			if (o.getUser().getEmail().equals(email) && o.getStatus().getName().equals("waiting")) {
-				logger.info("Creating a list of orders");
 				orders.add(o);
 			}
 		}
+		logger.info("Creating a list of orders");
 
 		check.setOrders(orders);
 		check.setDate(new Date(System.currentTimeMillis()));
@@ -60,9 +60,9 @@ public class MakeCheck extends HttpServlet {
 		for (Order o : orders) {
 			o.setStatus(statusDao.getById(Status.RENT_ORDER_STATUS));
 			o.setCheck(check);
-			logger.info("Updating order");
 			orderDao.update(o);
 		}
+		logger.info("Updating order");
 		
 		response.sendRedirect(getServletContext().getContextPath() + "/userOrders");
 	}

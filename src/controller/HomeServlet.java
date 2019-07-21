@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
 
 /* 
- * Start page servlet
+ * Home page servlet
  */
 @WebServlet("")
 public class HomeServlet extends HttpServlet {

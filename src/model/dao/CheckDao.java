@@ -9,6 +9,7 @@ public interface CheckDao {
 	Check createCheck(Check check);
 	Check getById(int id);
 	List<Check> getAllChecks();
+	List<Check> getUnpaid();
 	void update(Check check);
 	void delete(int id);
 }

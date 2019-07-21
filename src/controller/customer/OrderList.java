@@ -42,7 +42,7 @@ public class OrderList extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		String email = (String) request.getSession().getAttribute("email");
 		Date startDate = Date.valueOf(request.getParameter("startDate"));
-		Date endDate = Date.valueOf(request.getParameter("finishDate"));
+		Date endDate = Date.valueOf(request.getParameter("endDate"));
 		Date currentDate = new Date(System.currentTimeMillis());
 		String needDriver = request.getParameter("driver");
 		String passport = request.getParameter("passport");
