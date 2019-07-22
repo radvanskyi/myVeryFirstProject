@@ -69,6 +69,7 @@ public class RentCar extends HttpServlet {
 			order.setDriver(needDriver);
 			order.setStatus(statusDao.getById(Status.WAIT_ORDER_STATUS));
 			orderDao.createOrder(order);
+			logger.info("Setting date in RentServlet: "+ order.getStartDate());
 			response.sendRedirect(getServletContext().getContextPath() + "/userOrders");
 		}
 		

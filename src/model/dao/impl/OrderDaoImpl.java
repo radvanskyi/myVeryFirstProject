@@ -40,7 +40,6 @@ public class OrderDaoImpl implements OrderDao {
 			st.setBoolean(++k, order.isDriver());
 			st.setInt(++k, order.getStatus().getId());
 			st.executeUpdate();
-			
 			ResultSet rs = st.getGeneratedKeys();
 			if (rs.next()) {
 				int id = rs.getInt(1);

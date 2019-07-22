@@ -11,7 +11,7 @@
 				class="form-group" id="register_form">
 				<div>
 					<input name="email" placeholder="<f:message key="enter.email"/>"
-						type="text" required="" class="form-control">
+						type="email" required="" class="form-control">
 					<c:if test="${errorMsg}">
 						<tr>
 							<td style="color: red">${errorMsg }</td>

@@ -14,12 +14,15 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
+import model.dao.CarDao;
 import model.dao.CheckDao;
 import model.dao.OrderDao;
 import model.dao.StatusDao;
+import model.dao.impl.CarDaoImpl;
 import model.dao.impl.CheckDaoImpl;
 import model.dao.impl.OrderDaoImpl;
 import model.dao.impl.StatusDaoImpl;
+import model.entity.Car;
 import model.entity.Check;
 import model.entity.Order;
 import model.entity.Status;
@@ -39,12 +42,16 @@ public class MakeCheck extends HttpServlet {
 		List<Order> orders = new ArrayList<>();
 		CheckDao checkDao = new CheckDaoImpl();
 		StatusDao statusDao = new StatusDaoImpl();
+		CarDao carDao = new CarDaoImpl();
 		Check check = new Check();
 		
 		String email = (String) request.getSession().getAttribute("email");
 		
 		for (Order o : orderDao.getAllOrders()) {
 			if (o.getUser().getEmail().equals(email) && o.getStatus().getName().equals("waiting")) {
+				Car car = o.getCar();
+				car.setStatus(statusDao.getById(Status.DISABLED_CAR_STATUS));
+				carDao.update(car);
 				orders.add(o);
 			}
 		}

@@ -680,3 +680,300 @@
 2019-07-22 00:31 [ INFO]               FinishOrder:    56 - order was finished
 2019-07-22 00:31 [ INFO]                 NewOrders:    50 - List of new orders
 2019-07-22 00:31 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:01 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 08:02 [ INFO]                     Login:    69 - Customer
+2019-07-22 08:02 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 08:02 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:02 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:02 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:06 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:07 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:07 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 08:07 [ INFO]                     Login:    69 - Customer
+2019-07-22 08:07 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 08:07 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:07 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:08 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:09 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 08:09 [ INFO]                     Login:    69 - Customer
+2019-07-22 08:09 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 08:09 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:09 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:09 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:09 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 08:09 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:09 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:09 [ INFO]          DeleteTempOrders:    33 - Deleting temp orders
+2019-07-22 08:09 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:09 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:10 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:10 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:10 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 08:10 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:11 [ INFO]          DeleteTempOrders:    33 - Deleting temp orders
+2019-07-22 08:11 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:18 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:18 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:18 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:18 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 08:18 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:18 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 08:18 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 08:18 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 08:18 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:24 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:24 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:24 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:24 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 08:24 [ INFO]                   RentCar:    72 - Setting date in Servlet: 2019-10-10
+2019-07-22 08:24 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:27 [ INFO]          DeleteTempOrders:    33 - Deleting temp orders
+2019-07-22 08:27 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:27 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:27 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:27 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:27 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 08:27 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 08:27 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:27 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 08:27 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 08:27 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 08:27 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:43 [ INFO]                    Return:    30 - ==> customer
+2019-07-22 08:43 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 08:43 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:43 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:43 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:43 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 08:43 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 08:43 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:45 [ INFO]          DeleteTempOrders:    33 - Deleting temp orders
+2019-07-22 08:45 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:49 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 08:49 [ INFO]                     Login:    69 - Customer
+2019-07-22 08:49 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 08:49 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:49 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:49 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:49 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 08:49 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 08:49 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:50 [ INFO]          DeleteTempOrders:    33 - Deleting temp orders
+2019-07-22 08:50 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:50 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 08:50 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 08:50 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 08:50 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 08:50 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 08:50 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:50 [ INFO]          DeleteTempOrders:    33 - Deleting temp orders
+2019-07-22 08:50 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 05:50 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 05:50 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 05:51 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 05:51 [ INFO]                   RentCar:    59 - Wrong input data
+2019-07-22 05:51 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 05:51 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 05:51 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 05:51 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 05:51 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 05:51 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 08:51 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:31 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 10:31 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 10:32 [ INFO]                  UserList:    42 - Success registration
+2019-07-22 10:32 [ INFO]                  UserList:    42 - Success registration
+2019-07-22 10:32 [ INFO]                     Login:    69 - Customer
+2019-07-22 10:32 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 10:32 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 10:32 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 10:32 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 10:32 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-22 10:32 [ INFO]                   CarSort:    52 - Sorting by price
+2019-07-22 10:32 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-22 10:32 [ INFO]                   CarSort:    55 - Sorting by model
+2019-07-22 10:33 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-22 10:33 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-22 10:33 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-22 10:33 [ INFO]                   CarSort:    45 - Cars sorting by mark
+2019-07-22 10:33 [ INFO]                   CarSort:    32 - Cars sorting
+2019-07-22 10:33 [ INFO]                   CarSort:    49 - Cars sorting by carClass: C
+2019-07-22 10:33 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 10:33 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 10:33 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 10:33 [ INFO]                   RentCar:    59 - Wrong input data
+2019-07-22 10:34 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 10:34 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 10:34 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 10:34 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:34 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 10:34 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 10:34 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 10:34 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:34 [ INFO]                     Login:    81 - Wrong input data while login
+2019-07-22 10:34 [ INFO]                     Login:    73 - Manager
+2019-07-22 10:34 [ INFO]                   Manager:    22 - Manager page
+2019-07-22 10:34 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 10:34 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 10:34 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 10:35 [ INFO]          OrderListManager:    28 - List of all orders
+2019-07-22 10:35 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 10:35 [ INFO]                    Return:    38 - ==> manager
+2019-07-22 10:35 [ INFO]                   Manager:    22 - Manager page
+2019-07-22 10:35 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:35 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 10:35 [ INFO]                  PayOrder:    56 - Car was rent
+2019-07-22 10:35 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:35 [ INFO]                 ReturnCar:    49 - Car was retuned
+2019-07-22 10:35 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:35 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 10:35 [ INFO]          CreateRepairPage:    28 - Create repair page
+2019-07-22 10:35 [ INFO]               RepairOrder:    66 - Check for repairing was made
+2019-07-22 10:35 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 10:35 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:35 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:35 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 10:35 [ INFO]                  PayOrder:    67 - Car was repaired and ready for use
+2019-07-22 10:35 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:36 [ INFO]                    Logout:    25 - Logging out
+2019-07-22 10:36 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 10:36 [ INFO]                     Login:    65 - Admin
+2019-07-22 10:36 [ INFO]                     Admin:    23 - Admin page
+2019-07-22 10:36 [ INFO]               EditCarPage:    29 - Starting editing a car
+2019-07-22 10:36 [ INFO]                   EditCar:    27 - Editing a car
+2019-07-22 10:36 [ INFO]                 DeleteCar:    26 - Deleting a manager
+2019-07-22 10:36 [ INFO]               ManagerList:    30 - List of all managers
+2019-07-22 10:36 [ INFO]                  UserList:    29 - List of all customers
+2019-07-22 10:36 [ INFO]                 BlockUser:    41 - Blocking a customer
+2019-07-22 10:36 [ INFO]                  UserList:    29 - List of all customers
+2019-07-22 10:36 [ INFO]                 BlockUser:    37 - Unblocking a customer
+2019-07-22 10:36 [ INFO]                  UserList:    29 - List of all customers
+2019-07-22 10:36 [ INFO]                AddManager:    30 - Adding a manager
+2019-07-22 10:36 [ INFO]               ManagerList:    30 - List of all managers
+2019-07-22 10:37 [ INFO]                    Logout:    25 - Logging out
+2019-07-22 10:37 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 10:37 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:37 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 10:37 [ INFO]                     Login:    69 - Customer
+2019-07-22 10:37 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 10:37 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 10:37 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 10:37 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 10:37 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 10:37 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 10:37 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:38 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 10:38 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 10:38 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 10:38 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:38 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 10:38 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 10:38 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 10:38 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 10:38 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 10:38 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 10:38 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 10:38 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 10:38 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:57 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 10:57 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 10:57 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 10:57 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:58 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 10:58 [ INFO]                     Login:    73 - Manager
+2019-07-22 10:58 [ INFO]                   Manager:    22 - Manager page
+2019-07-22 10:58 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 10:58 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 10:58 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 10:58 [ INFO]                   RentCar:    38 - Order car page
+2019-07-22 10:58 [ INFO]                   RentCar:    63 - Order was made
+2019-07-22 10:58 [ INFO]                   RentCar:    75 - Setting date in RentServlet: 2019-10-10
+2019-07-22 10:58 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:58 [ INFO]                 MakeCheck:    37 - Creating a check
+2019-07-22 10:58 [ INFO]                 MakeCheck:    51 - Creating a list of orders
+2019-07-22 10:58 [ INFO]                 MakeCheck:    65 - Updating order
+2019-07-22 10:58 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 10:58 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 11:04 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:04 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 11:04 [ INFO]                  PayOrder:    56 - Car was rent
+2019-07-22 11:04 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:04 [ INFO]          OrderListManager:    28 - List of all orders
+2019-07-22 11:04 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 11:12 [ INFO]                    Logout:    25 - Logging out
+2019-07-22 11:12 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 11:12 [ INFO]                    Return:    43 - Nobody logged in
+2019-07-22 11:12 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 11:15 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 11:15 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 11:15 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 11:15 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 11:15 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:15 [ INFO]                 MakeCheck:    40 - Creating a check
+2019-07-22 11:15 [ INFO]                 MakeCheck:    58 - Creating a list of orders
+2019-07-22 11:15 [ INFO]                 MakeCheck:    72 - Updating order
+2019-07-22 11:15 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:15 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 11:15 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:15 [ INFO]                 ReturnCar:    49 - Car was retuned
+2019-07-22 11:15 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:16 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 11:16 [ INFO]                     Login:    81 - Wrong input data while login
+2019-07-22 11:16 [ INFO]                     Login:    73 - Manager
+2019-07-22 11:16 [ INFO]                   Manager:    22 - Manager page
+2019-07-22 11:16 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 11:16 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 11:16 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 11:16 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 11:16 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 11:17 [ INFO]                    Return:    38 - ==> manager
+2019-07-22 11:17 [ INFO]                   Manager:    22 - Manager page
+2019-07-22 11:17 [ INFO]                    Logout:    25 - Logging out
+2019-07-22 11:17 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 11:17 [ INFO]                    Logout:    25 - Logging out
+2019-07-22 11:17 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 11:17 [ INFO]                     Login:    69 - Customer
+2019-07-22 11:17 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 11:17 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 11:17 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 11:17 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 11:17 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 11:17 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 11:17 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:17 [ INFO]                 MakeCheck:    40 - Creating a check
+2019-07-22 11:17 [ INFO]                 MakeCheck:    58 - Creating a list of orders
+2019-07-22 11:17 [ INFO]                 MakeCheck:    72 - Updating order
+2019-07-22 11:17 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:18 [ INFO]                     Login:    73 - Manager
+2019-07-22 11:18 [ INFO]                   Manager:    22 - Manager page
+2019-07-22 11:18 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 11:18 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 11:18 [ INFO]              ConfirmOrder:    30 - Order was confirmed
+2019-07-22 11:18 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 11:18 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:18 [ INFO]                  PayOrder:    37 - Paying for order
+2019-07-22 11:18 [ INFO]                  PayOrder:    56 - Car was rent
+2019-07-22 11:18 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:18 [ INFO]                 ReturnCar:    49 - Car was retuned
+2019-07-22 11:18 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:18 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 11:18 [ INFO]               FinishOrder:    56 - order was finished
+2019-07-22 11:18 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 11:18 [ INFO]                 NewOrders:    50 - List of new orders
+2019-07-22 11:18 [ INFO]                    Logout:    25 - Logging out
+2019-07-22 11:18 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 11:18 [ INFO]                    Logout:    25 - Logging out
+2019-07-22 11:18 [ INFO]               HomeServlet:    22 - Home
+2019-07-22 11:19 [ INFO]                     Login:    69 - Customer
+2019-07-22 11:19 [ INFO]                  Customer:    23 - Customer page
+2019-07-22 11:19 [ INFO]                   CarList:    35 - List of all cars
+2019-07-22 11:19 [ INFO]                  OrderCar:    27 - Ordering a car
+2019-07-22 11:19 [ INFO]                   RentCar:    37 - Order car page
+2019-07-22 11:19 [ INFO]                   RentCar:    62 - Order was made
+2019-07-22 11:19 [ INFO]                   RentCar:    72 - Setting date in RentServlet: 2019-10-10
+2019-07-22 11:19 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:19 [ INFO]                 MakeCheck:    40 - Creating a check
+2019-07-22 11:19 [ INFO]                 MakeCheck:    58 - Creating a list of orders
+2019-07-22 11:19 [ INFO]                 MakeCheck:    72 - Updating order
+2019-07-22 11:19 [ INFO]                UserOrders:    49 - List of all customer orders
+2019-07-22 11:19 [ INFO]                   CarList:    35 - List of all cars
